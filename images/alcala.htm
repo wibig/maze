@@ -1,0 +1,108 @@
+<html><head><title>Alcala 1998</title>
+
+
+<script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+
+  for (var n=0; n <= (30+msgtot.length-tempo); n++) 
+    
+sp += " "; 
+  return(sp); 
+} 
+
+
+var msg2 = 
+"T. Wibig                   16th European Cosmic Ray Symposium, Madrid, 1998                     ";
+
+
+   var pos2 = 0; 
+msg3 = spazi(msg2,0) + msg2 + "             "; 
+function ScrollStatus()
+ { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	
+window.setTimeout("ScrollStatus()",110); 
+} 
+ 
+
+</script>
+
+<script language="JavaScript1.1">
+var debug = true;
+function right(e) 
+{
+if 
+(navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) 
+{
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if 
+(document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+
+</script>
+
+
+
+
+
+
+<script language="JavaScript">
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+function movepic(img_name,img_src) {
+document[img_name].src=img_src;
+}
+// End -->
+</script></head>
+<body onload="ScrollStatus()" ;="" background="alcala/blb" link="#00ff00" vlink="#aabb00">
+<center>
+<table width="95%"><tbody><tr>
+<td valign="top">
+<img src="alcala/alcalalo" align="left" border="0">
+</td>    </tr></tbody></table>
+<table width="90%"><tbody><tr>
+    <td width="20"> </td>
+<td align="left" valign="top">
+<font color="#ffff00" size="+2">
+Trzy prace zgloszone przeze mnie  na konferencje w Madrycie:
+</font></td></tr></tbody></table>
+<table width="90%"><tbody><tr>
+    <td width="100">  </td>
+<td align="left" valign="top">
+<font color="#00aaaa" size="+2">
+</font><ol><li>
+<font color="#00aaaa" size="+2"><font color="#ffff00" size="+2">  
+T. Wibig (for the KASCADE Collaboration)<br>
+<i> <a href="http://www.u.lodz.pl/%7Ewibig/alcala/mudens.ps.gz">Extensive Air Showers Muon Density Spectrum</a></i><br>
+<br> </font>
+</font></li><li><font color="#00aaaa" size="+2"><font color="#ffff00" size="+2">  
+T. Wibig <br>
+<i> <a href="http://www.u.lodz.pl/%7Ewibig/alcala/3steps.ps.gz"> Three Steps in Intranuclear Cascading</a></i>   <br>
+<br></font>
+</font></li><li><font color="#00aaaa" size="+2"><font color="#ffff00" size="+2">  
+T. Wibig &amp; D. Sobczynska<br>
+<i> <a href="http://www.u.lodz.pl/%7Ewibig/alcala/nxsec.ps.gz"> Nuclei CrossSections in Extensive Air Showers</a></i>
+</font>
+</font></li></ol></td></tr>
+</tbody></table></center>
+ <table width="100%"> <tbody><tr><td align="right"><a href="http://www.u.lodz.pl/%7Ewibig/twibig.htm"><img src="alcala/homeb" align="middle" border="0" height="22" width="22"></a> 
+ </td></tr></tbody></table>
+
+
+</body></html>
