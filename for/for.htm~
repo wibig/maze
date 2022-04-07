@@ -109,7 +109,7 @@ function ScrollStatus() {
 <base target="Right">
 </head>
 
-<body background="bline2.gif" onLoad="ScrollStatus()">
+<body background="bline2.gif">
 
 <div align="right">
 

@@ -1,0 +1,259 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
+
+var msg2 = "Projekt im. Rolanda Maze                              ";
+
+   var pos2 = 0; 
+msg3 = spazi(msg2,0) + msg2 + " "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",200); 
+} 
+ 
+</script> 
+<title>fizyka  projektu Maze - symulacje</title>
+<base target="Right">
+</head>
+
+<body  onLoad="ScrollStatus()" ; background="../bline2.gif">
+
+<div align="right">
+
+<table border="0" width="95%" height="49">
+  <tr>
+    <td><div align="center">
+<center><table border="2" width="100%" height="49">
+      <tr>
+        <td width="63%" height="72">
+<p align="center"><font size=+5
+color="#000000"><strong>Symulacje</strong></font></td>      
+</tr>    
+   <tr>
+        <td width="63%" height="19"><strong><font size="6" color="#FF0000"><p align="center">
+</font><font
+        size=+1 color="#FF0000">to, czego sie spodziewamy</font>
+</strong></td>       </tr>     </table> 
+   </center></div>
+<table border="2" cellpadding="3" width="100%">   
+    <tr>
+        <td valign="top"><font size=+1> 
+ 
+<!-- <p align="center"> 
+<img src="lodz.jpg" 
+        alt="widmo" width="300"><br><font size=+1> 
+	</p> -->         
+<br>
+Poniewaz wiemy (mniej wiecej), jak czesto przychodzi do nas promieniowanie
+kosmiczne i wiemy tez (mniej wiecej), jak wygladaja wielkie peki promieniowania
+kosmicznego o najwyzszych energiach, to wiedzac jakie detektory i gdzie
+zamierzamy poustawiac, mozemy pokusic sie o przewidywania tego, co bedzie sie
+dzialo, gdy projekt Maze z projektu stanie sie rzeczywistoscia. 
+<br>
+Rysunek obok pokazuje (zaznaczone kolkami) szkoly, ktore zglosily na poczatku
+2002 roku chec uczestnictwa w projekcie (kwadracik to budynek IPJ). Male
+czarne punkciki to miejsca padania rdzeni (osi) wielkich pekow pochodzacych od
+czastek promieniowania kosmicznego o energiach wiekszych niz 10<sup>18</sup>eV,
+ktore wywolalyby rejestracje w conajmniej czterech szkolach. Ich ilosc
+odpowiada mniej wiecej rocznemu okresowi pracy aparatury. Jak widac jest ich
+calkiem sporo.
+<br>
+
+</td><td>
+<p align="center"> 
+<img src="1e18w.jpg" 
+        alt="jeden rok" ><br><font size=+1> 
+	</p>          
+  </table> 
+<table border="2" cellpadding="3" width="100%">    
+    <tr> 
+        <td valign="top"><font size=+1> 
+
+Im wieksza energia czastki, tym wiekszy pek. Nalezy sie wiec spodziewac, ze
+rejestracje pekow o roznych energiach rozmieszczone na mapie beda roznie. Im
+energia wieksza tym <font color="#005555">
+efektywna powierzchnia zbierania</font> (tak to sie czasem
+nazywa) aparatury bedzie wieksza.
+<br>
+Oczywiscie inaczej tez beda wygladaly wyniki poszczegolnych rejestracji.
+Generalnie, im wiekszy pek, tym wiekszych gestosci czastek spodziewamy sie na
+poszczegolnych detektorach.
+<br>
+Sytuacje te ilustruja rysunki ponizej. Dla energii 10<sup>18</sup>,
+3 10<sup>18</sup>
+i 10<sup>19</sup>eV narysowane jest na nich, jak rozrzucone byloby 500
+przykladowych pekow i cztery typowe (pierwsze z brzegu) przypadki rozrysowane
+szczegolowo. W kazdej szkole sa cztery detektory i kreski pionowe (w
+"trafionych" szkolach) pokazuja, jak duzo czastek padlo na kazdy detektor (by
+byc precyzyjnym, dlugosci tych kresek sa proporcjonalne do logarytmu liczby
+czastek)
+
+</table>   
+ <table border="2" cellpadding="3" width="100%">    
+    <tr> 
+        <td valign="top"><font size=+3 color="#FF0000"> 
+<p align="center"> 10<sup>18</sup> eV 
+</table>
+<table border="2" cellpadding="3" width="100%">    
+        <td valign="top"><br>
+  <p align="center"> 
+<img src="1e18.jpg" 
+        alt="1e18" >
+	      </td> <td valign="top">
+<p align="center"> 
+<img src="eg11e18.jpg" 
+        alt="egz1">
+<img src="eg51e18.jpg" 
+        alt="egz2"><br>
+
+<img src="eg31e18.jpg" 
+        alt="egz3">
+<img src="eg41e18.jpg" 
+        alt="egz4">
+	</p>          
+
+
+
+</table>   
+<table border="2" cellpadding="3" width="100%">    
+    <tr> 
+        <td valign="top"><font size=+3 color="#FF0000"> 
+<p align="center">3 10<sup>18</sup> eV 
+</table>
+<table border="2" cellpadding="3" width="100%">    
+        <td valign="top"><br>
+  <p align="center"> 
+<img src="3e18.jpg" 
+        alt="3e18" >
+	      </td> <td valign="top">
+<p align="center"> 
+<img src="eg13e18.jpg" 
+        alt="egz1">
+<img src="eg23e18.jpg" 
+        alt="egz2"><br>
+
+<img src="eg33e18.jpg" 
+        alt="egz3">
+<img src="eg43e18.jpg" 
+        alt="egz4">
+	</p>          
+</table>   
+<table border="2" cellpadding="3" width="100%">    
+    <tr> 
+        <td valign="top"><font size=+3 color="#FF0000"> 
+<p align="center"> 10<sup>19</sup> eV 
+</table>
+<table border="2" cellpadding="3" width="100%">    
+        <td valign="top"><br>
+  <p align="center"> 
+<img src="1e19.jpg" 
+        alt="1e19" >
+	      </td> <td valign="top">
+<p align="center"> 
+<img src="eg51e19.jpg" 
+        alt="egz1">
+<img src="eg21e19.jpg" 
+        alt="egz2"><br>
+
+<img src="eg31e19.jpg" 
+        alt="egz3">
+<img src="eg41e19.jpg" 
+        alt="egz4">
+	</p>          
+
+
+
+</table>   
+
+<!--  <table border="2" cellpadding="3" width="100%">    
+    <tr> 
+        <td valign="top"><font size=+3 color="#FF0000"> 
+<p align="center"> 10<sup>19</sup> eV 
+</table>
+-->
+<table border="2" cellpadding="3" width="100%">    
+        <td valign="top">
+<font size=+1>
+<br>
+Dla pekow, jak te przedstawione powyzej, mozna pokusic sie, aby z
+zaobserwowanych gestosci (wysokosci slupkow na rysunkach)
+odtworzyc, ile czastek bylo w calym peku - <font color="#005555">zrekonstruowac
+pek</font>. Calkowita ilosc czastek w peku jest zupelnie niezla (najlepsza,
+jaka w naszej sytuacji moze istniec) miara energii czastki pierwotnej. <br>
+Symulacje komputerowe maja to do siebie, ze mozemy wykonac obliczenia
+dla zadanej z gory energii czastki (tak jak to przedstawia sie na
+obrazkach powyzej). A potem mozemy porownac ja z energia "zrekonstruowanego
+peku". Porownanie takie daje nam informacje (niezwykle cenna!) o 
+<font
+color="#005555">zdolnosci rozdzielczej</font>, czyli dokladnosci pomiaru
+energii przez nasza aparature. <bR>
+Ponizej przedstawione sa wyniki takiego porownania (dla tych samych trzech
+energii  (10<sup>18</sup>,
+3 10<sup>18</sup>
+i 10<sup>19</sup>eV). Wykresy te pokazuja, jak czesto odserwuje sie konkretne
+odchylenia od "wartosci prawdziwej" (nazywa sie je czasem <font color="#005555">
+histogramami</font>, ale to
+nie jest takie wazne). Jak widac najczesciej zrekonstruowana wartosc oscyjuje
+wokol teh prawdziwej, co odpowiada <font color="#005555">0</font> na osi
+poziomej (logarytmy sa rowne). Im ta roznica wieksza, tym "slupek histogramu"
+nizszy - tym nizsza czestosc pojawiania sie takich odchylen. Porownujac
+histogramy dla roznych energii widac, ze wraz z jej wzrostem zwieksza sie tez
+dokladnosc rekonstrukcji, co nie jest znowu niczym niespodziewanym, wprost
+przeciwnie raczej i swiadczy to o tym, ze wszystko dziala tak, jak powinno.
+
+</td>    <td valign="top">
+<p align="center"> <br>
+<font size=+3 color="#FF0000" align="center"> 10<sup>18</sup> eV </font><br>
+<img src="h1e18.jpg" 
+        alt="histogram 1e18">
+</table>
+<table border="2" cellpadding="3" width="100%">    
+        <td valign="top">
+<p align="center"> <font size=+3 color="#FF0000" align="center"> 3 10<sup>18</sup> eV </font>
+<br>
+<img src="h3e18.jpg" 
+        alt="histogram 3e18">
+</td><td>
+<p align="center"> <font size=+3 color="#FF0000" align="center"> 10<sup>19</sup> eV </font>
+<br>
+<img src="h1e19.jpg" 
+        alt="histogram 1e19"> 
+	</p>    
+</table>      
+ <!--
+ </td>
+         <td valign="top"><font size=+1>
+
+Badania 
+
+
+ </font>
+      </tr>
+    </table>
+    </td>
+  </tr>
+
+-->
+
+
+</table>
+</div>
+<p align="center"><font size="2">Copyright © T.Wibig. All rights reserved.<br>
+
+E-mail:<a href="mailto:wibig@zpk.u.lodz.pl">wibig@zpk.u.lodz.pl</a><br>
+WWW: <a href="http://www.u.lodz.pl/~wibig">www.u.lodz.pl/~wibig</a><br>
+</font></p>
+
+</body>
+</html>

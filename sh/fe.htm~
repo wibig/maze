@@ -2,13 +2,35 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+ <script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
+
+var msg2 =    
+"Projekt im. Rolanda Maze                                                  ";
+
+   var pos2 = -1; 
+msg3 = spazi(msg2,0) + msg2 + "                  "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",100); 
+} 
+ 
+</script> 
 
 
 <title>Fly's Eye</title>
 <base target="Right">
 </head>
 
-<body background="bline2.gif">
+<body background="bline2.gif" onLoad="ScrollStatus()">
 
 <div align="right">
 
