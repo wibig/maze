@@ -1,0 +1,478 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<HTML>
+<HEAD>
+<!-- TWO STEPS TO INSTALL ENERGY EQUIVALENTS:
+
+   1.  Paste the specified coding into the HEAD of your HTML document
+   2.  Put the last code into the BODY of your HTML document  -->
+
+<!-- STEP ONE: Copy this code into the HEAD of your HTML document  -->
+		  
+<HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Cut-N-Paste JavaScript
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+
+function initArray() {
+this.length = initArray.arguments.length;
+for (var i = 0; i < this.length; i++) {
+this[i] = initArray.arguments[i];
+   }
+}
+var isn10 = new initArray("4b","5b","8b","8b");
+isn10[0] =
+"~01~10.10197~21e7~32.7778e-7~4.23884e-3~56.2418e18~66.2418e9~72.1739e-16~81.1126e-14~9"; 
+isn10[1] =
+"~09.80665~11~29.80665e7~32.7224e-6~42.34226e-3~56.12109e19~66.12109e10~72.1319e-15~81.09113e-15~9"; 
+isn10[2] =
+"~01e-7~11.0197e-8~21~32.778e-14~4.23884e-10e-7~56.2418e11~66.2418e2~72.1739e-23~81.1126e-21~9";
+ isn10[3] =
+"~03.6e6~13.6709e5~23.6e13~31~48.5984e2~52.247e25~62.247e16~77.826e-10~84.005e-8~9"; 
+isn10[4] =
+"~04186.8~1426.93~24186.8e10~31163e-6~41~52613.32e19~62613.32e10~79.10196e-9~84658.4e-17~9";
+isn10[5] =
+"~01.6021e-19~11.6336e-20~21.6021e-12~34.4502e-26~43.8265e-23~51~61e-9~73.48283e-35~81.7825e-33~9";
+isn10[6] =
+"~01.6021e-10~11.6336e-11~21.6021e-3~34.4502e-17~43.8265e-14~51e9~61~73.48283e-26~81.7825e-24~9";
+isn10[7] =
+"~04.6e15~14.69062e14~24.6e22~31.27779e9~41.098664e8~52.871228e34~62.871228e25~71~851.1796~9"; 
+isn10[8] =
+"~08.987544e13~19.1641e14~28.987544e20~32.4965e7~42.14662e10~55.60982e32~65.60982e23~70.019539~81~9";
+
+
+function eneCon() { for (var i = 0; i < 9; i++) { if
+(document.isnform10.enei[i].checked) { enei = i; eneinm =
+document.isnform10.enei[i].value;    } }
+for (var i = 0; i < 9; i++) {
+if (document.isnform10.eneo[i].checked) {
+eneo = i;
+eneonm = document.isnform10.eneo[i].value;
+   }
+}
+useri = document.isnform10.eneinp.value;
+if (useri == 0) {
+useri = 1;
+document.isnform10.eneinp.value = useri;
+}
+mulstr = isn10[enei];
+picker = "~" + eneo;
+ps = mulstr.indexOf(picker);
+eneo++;
+picker = "~" + eneo;
+ps1 = mulstr.indexOf(picker);
+mulstr = mulstr.substring((ps + 2),ps1);
+ps = (useri * mulstr);
+picker = "";
+picker += ps
+
+if (ps1 > -1) {
+// ps = ps + .000001;
+picker = "";
+picker += ps;
+ps2 = picker.indexOf("e");
+if (ps2 < 0) {
+picker = picker.substring(0,(ps1 + 6));
+}
+if (ps2 == 0 || ps2 > 0) {
+ps3 = picker.indexOf("00000");
+if (ps3 > 0) {
+picker = picker.substring(0,ps3 + 1) + picker.substring(ps2,picker.length);
+     }
+   }
+}
+picker = useri + " " + eneinm + " = " + picker + " " + eneonm
+document.isnform10.eneout.value = picker;
+}
+// End
+</SCRIPT>
+
+
+<script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
+
+var msg2 = 
+"Projekt im. Rolanda Maze                                                    ";
+
+   var pos2 = 0; 
+msg3 = spazi(msg2,0) + msg2 + "        "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",100); 
+} 
+ 
+</script> 
+<script language="JavaScript1.1">
+var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
+
+<script language="JavaScript">
+
+var popup="Sorry, right-click is disabled.\n\nThis Site Copyright ©2000";
+function noway(go) {
+if (document.all) {
+if (event.button == 2) {
+alert(popup);
+return false;
+}
+}
+if (document.layers) {
+if (go.which == 3) {
+alert(popup);
+return false;
+}
+}
+}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+}
+document.onmousedown=noway;
+</script><TITLE> energie w promieniowaniu kosmicznym</TITLE></HEAD>
+
+<body onLoad="ScrollStatus()" ; bgcolor=white LINK="#000099" VLINK="#000099" 
+ALINK="#FF0000" TEXT="#000000" background="../../bline2.gif">
+<div align="right"> 
+<table border="0" width="95%" height="49"> 
+  <tr> 
+    <td><div align="center"><center>
+<table border="2" width="100%" height="49"> 
+      <tr> 
+        <td width="63%" height="72"><p align="center"><font size=+5 
+color="#000000"><strong>Energia (eV)</strong></font></td>       
+</tr>       <tr> 
+        <td width="63%" height="19"><strong><font size="6" color="#FF0000"><p align="center"></font><font 
+        size=+1 color="#FF0000"> i jej (rozne) jednostki</font></strong></td>
+      </tr>      </table> 
+    </center></div>
+<table border="2" cellpadding="3" width="100%"> 
+     
+<!--         <td valign="top" > 
+ 
+<center>
+<TABLE WIDTH=100% BORDER=0 CELLPADDING=10 CELLSPACING=0>
+-->
+  <TR><!--<TD VALIGN="TOP" WIDTH=110>
+  Navigation bar -->
+<td valign="top"><p> <font size=+2>
+<br>
+Elektronowolt (eV) jest jednostka energii.<br> <br>1 eV to bardzo malo. Z
+definicji energie taka uzyskuje cialo naladowane elektrycznie ladunkiem
+rownym ladunkowi jednego elektronu, gdy pozwolic mu przemieszczac sie
+swobodnie w polu elektrostatycznym od punktu A do punktu B, jesli miedzy tymi
+punktami istnieje roznica potencjalow 1V.
+<BR>
+Energie taka maja zwykle fotony swiatla widzalnego. Energie innych rodzajow
+promieniowania pokazane sa w tabelce ponizej.
+</font>
+
+<center>
+
+<BR><BR> <TABLE BORDER=1 width="100%" cellpadding="3" >
+<TR><TH><font size=+2 color="#000099">Rodzaj promieniowania</TH><TH><font
+size=+2 color="#000099">Energia</TH> <TR><TD><font size=+1>swiatlo, ktore
+widzimy</TD><TD><font size=+2 >1 eV</TD></TR> <TR><TD><font size=+1
+>promieniowanie ultrafioletowe - swiatlo, ktore opala nas latem</TD><TD><font
+size=+2 >10 eV</TD></TR>  <TR><TD><font size=+1 >promieniowanie X
+(rentgenowskie) - przeswietla nas na wylot</TD><TD><font size=+2 >1000 eV = 1
+keV</TD></TR>  <TR><TD><font size=+1 >promieniowanie gamma (kosmiczne)
+mierzone (np) przez aparature <a
+href="http://phyvs1.leeds.ac.uk">Whipple </a></TD><TD><font size=+2
+>10<sup>12</sup>(jedynka z 12 zerami!) eV = 1 TeV</TD></TR> 
+<TR><TD><font
+size=+1 >promieniowanie kosmiczne mierzone przez typowe aparatury
+wielkopekowe (np <a href="http://www.u.lodz.pl">lodzka</a>)
+</TD>
+<TD><font size=+2 >10<sup>15</sup> eV = 1 PeV</TD></TR> 
+<TR><TD><font size=+1 >promieniowanie kosmiczne
+ - punkt naszego zainteresowania (a takze <A
+href="http://www.auger.org"> Projektu Pierre Auger
+</a>)</TD><TD><font size=+2 >10<sup>20</sup> eV = 100 EeV</TD>
+<TR><TD><font size=+1 >Najwyzsze energie czastek zaobserwowane
+kiedykolwiek energia cegly
+spadajacej z balkonu na drugim pietrze</TD><TD><font size=+2
+>3x10<sup>20</sup> eV</TD></TD></tr> </TABLE>
+</center>
+<br>
+<br><font size=+2><font size=+2 >
+Czesto uzywa sie nastepujacych skrotow:
+<center>
+<BR><TABLE BORDER=1>
+<TR><TH><font size=+2 color="#000099">Energie</TH><TH><font 
+color="#000099" size=+2>
+Oznaczenie</TH> <TR>
+<TD><font size=+2 >10<sup>3</sup> eV = 1 000
+eV</TD><TD><font size=+2 >keV = kiloelektronowolt</TD></TR> 
+<TR><TD><font
+size=+2 >10<sup>6</sup> eV = 1 000 000 eV</TD><TD><font size=+2 >MeV =
+megaelektronowolt</TD></TR> <TR><TD><font size=+2 >10<sup>9</sup> eV = 1 000
+000 000 eV</TD><TD><font size=+2 >GeV = gigaelektronowolt</TD></TR>
+<TR><TD><font size=+2 >10<sup>12</sup> eV = 1 000 000 000 000
+eV</TD><TD><font size=+2 >TeV = terraelektronowolt</TD></TR> <TR><TD><font
+size=+2 >10<sup>15</sup><font size=+2 > eV = 1 000 000 000 000 000
+eV</TD><TD><font size=+2 >PeV = petaelektronowolt</TD></TR> <TR><TD><font
+size=+2 >10<sup>18</sup> eV = 1 000 000 000 000 000 000 eV</TD><TD><font
+size=+2 >EeV =exaelektronowolt</TD></TR> <TR><TD><font size=+2
+>10<sup>21</sup> eV = 1 000 000 000 000 000 000 000 eV</TD><TD><font size=+2
+>ZeV = zetaelektronowolt</TD></TR> 
+</TABLE> </center>  
+<br><br><br><hr><br>
+Oczywiscie energie mierzy sie w roznych jednostkach. <br> 
+
+ Jedne na drugie
+mozna latwo zamieniac: <br> <br>
+<br>
+
+<CENTER>
+<TABLE BORDER=1>
+<TR><TD colspan=10 ALIGN=CENTER>
+<FORM NAME="isnform10">
+<FONT COLOR="#000099" size=+2><B>Zamiana energii z jednych jednostek na
+drugie.</B></TD></TR> <TR><TD colspan=10 VALIGN=TOP><font size=+1><B>Wpisz
+wartosc, ktora chcesz zamienic:</B><INPUT TYPE="text" NAME="eneinp" SIZE=30
+VALUE="" onChange="eneCon();"><BR><B>potem wybierz z czego i na co chcesz
+wartosc te zamienic:</FONT></TD></TR> 
+<TR><TD ALIGN=CENTER><FONT COLOR="#990000"
+SIZE=+2><B>z:</B></FONT></TD> 
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>J<BR> 
+<INPUT TYPE="radio" NAME="enei" VALUE="J" CHECKED onClick =""></TD> 
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>kGm<BR> 
+<INPUT TYPE="radio" NAME="enei" VALUE="kGm" onClick = ""></TD> 
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>erg<BR>
+<INPUT TYPE="radio" NAME="enei" VALUE="erg" onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>kWh<BR>
+<INPUT TYPE="radio" NAME="enei" VALUE="kWh" onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>Kcal<BR>
+<INPUT TYPE="radio" NAME="enei" VALUE="Kcal" onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>eV<BR>
+<INPUT TYPE="radio" NAME="enei" VALUE="ev" onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>GeV<BR>
+<INPUT TYPE="radio" NAME="enei" VALUE="Gev" onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>MT<BR>
+<INPUT TYPE="radio" NAME="enei" VALUE="MT" onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>g<BR>
+<INPUT TYPE="radio" NAME="enei" VALUE="g" onClick = ""></TD>
+</TR>
+<TR><TD ALIGN=CENTER><FONT COLOR="#990000" SIZE=+2><B>na:</B></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>J<BR>
+<INPUT TYPE="radio" NAME="eneo" VALUE="J" onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>kGm<BR>
+<INPUT TYPE="radio" NAME="eneo" VALUE="kGm" CHECKED onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>egr<BR>
+<INPUT TYPE="radio" NAME="eneo" VALUE="erg" onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>KWh<BR>
+<INPUT TYPE="radio" NAME="eneo" VALUE="KWh" onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>Kcal<BR>
+<INPUT TYPE="radio" NAME="eneo" VALUE="Kcal" onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>eV<BR>
+<INPUT TYPE="radio" NAME="eneo" VALUE="eV" onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>GeV<BR>
+<INPUT TYPE="radio" NAME="eneo" VALUE="GeV" onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>MT<BR>
+<INPUT TYPE="radio" NAME="eneo" VALUE="MT" onClick = ""></TD>
+<TD ALIGN=CENTER VALIGN=TOP><font size=+2>g<BR>
+<INPUT TYPE="radio" NAME="eneo" VALUE="g" onClick = ""></TD>
+<TR><TD colspan=10 ALIGN=CENTER VALIGN=TOP><font size=+2>
+<INPUT TYPE="button" VALUE=" Zamiana " onClick="eneCon();"> 
+<INPUT TYPE="reset" VALUE=" Reset "><BR><INPUT TYPE="text" NAME="eneout" SIZE=60 VALUE="" onClick="eneCon();">
+</FONT></form></TD></TR>
+</TABLE>
+</FORM>
+
+</font>
+<!-- Script Size:  5.67 KB  
+</FONT></TD></TR>
+</table>
+<Font size=+1>
+<BR> --> 
+
+<center>
+<TABLE BORDER=1 width=100%>
+<TR>
+<td ALIGN=CENTER >
+<font size=+2 color="000099">J </td><td ALIGN=CENTER><font size=+2
+ALIGN=CENTER> dzul</td> <td VALIGN=TOP><font size=+1 >  
+jednostka ukladu SI; praca, jaka sila jednego
+newtona (1 N) wykonuje na drodze jednego metra (1 m), 
+<tr><td ALIGN=CENTER><font size=+2 color="000099"> kGm </td><td
+ALIGN=CENTER><font size=+2 ALIGN=CENTER> kilogramometr</td>
+<td  VALIGN=TOP><font size=+1 >  praca, jaka sila jednego
+kilograma (sily!) (1 kG) wykonuje na drodze jednego metra (1 m), 
+<tr> <td ALIGN=CENTER ><font size=+2 color="000099"> erg 
+</td><td ALIGN=CENTER><font size=+2> erg</td>
+<td  VALIGN=TOP><font size=+1 >  jednostka
+ukladu CGS; praca, jaka sila jednej dyny (1 dyn) wykonuje na drodze jednego
+centymetra (1 cm), 
+<tR> <td ALIGN=CENTER><font size=+2 color="000099"> kWh </td>
+<td VALIGN=TOP ALIGN=CENTER><font size=+2> kilowatogodzina</td>
+<td  VALIGN=TOP><font size=+1 > 
+energia, jaka urzadzenie o mocy jednego kilowata (1 kW) wykonuje w czasie
+jednej godziny (1 h), 
+<tr> <td ALIGN=CENTER ><font size=+2 color="000099"> Kcal</td> 
+<td ALIGN=CENTER><font size=+2 > kilokaloria</td><td  VALIGN=TOP><font size=+1 >  
+energia potrzebna do ogrzania jednego litra (1 l = 1000 cm<sup>3</sup>) o jeden
+stopien (Celsjusza lub Kelvina)(1 deg), 
+<tr> <td ALIGN=CENTER><font size=+2 color="000099"> eV </td>
+<td ALIGN=CENTER><font size=+2> elektronowolt</td><td VALIGN=TOP><font size=+1 > 
+energia, jaka zyskuje elektron (ladunek 1.60210 10<sup>-19</sup> C) przy
+przejsciu roznicy potencjalow jednego wolta (1 V), <tr> 
+<td ALIGN=CENTER ><font size=+2 color="000099"> GeV </td>
+<td ALIGN=CENTER> <font size=+2>gigaelektronowolt</td><td  VALIGN=TOP><font size=+1 > 
+energia, jaka zyskuje elektron przy przejsciu roznicy potencjalow jednego
+miliarda woltow (10<sup>9</sup>V), 
+<tR> <td ALIGN=CENTER><font size=+2 color="000099"> MT </td>
+<td ALIGN=CENTER><font size=+2> megatona</td><td  VALIGN=TOP><font size=+1 > energia
+wybuchu miliona ton trotylu (TNT),
+<tr> <td ALIGN=CENTER><font size=+2 color="000099"> g </td>
+<td ALIGN=CENTER><font size=+2> gram (masy)</td><td  VALIGN=TOP><font size=+1 > energia
+rownowazna (zgodnie ze slynnym E=mc<sup>2</sup>) masie jednego grama.
+
+</table>
+ </center>
+<!--<br>
+<br>
+<hr>
+<br><font size=+1>
+</center>
+<font color="#003333">A z drugiej strony:</font><br>
+<p>
+Calkiem niedawno (w
+styczniowym numerze Nature z tego roku) doniesiono o pomiarze <font
+color="#990000"> najmniejszej </font> energii czastki elementarnej. Czastka ta
+byl neutron i mial energie <font color="#000099">1.4 10<sup><font
+size=+0>-12</font></sup> eV</font>( <font
+color="#000099">1.4</font> <font color="#990000">pikoeV</font>). Odpowiada to
+energii kinetycznej neutronu poruszajacego sie z predkoscia  okolo <font
+color="#000099">2 cm/s </font>(typowa predkosc czasteczek tlenu w powietrzu
+wynosi <font color="#000099">300 m/s</font>). Eksperymentatorzy planuja
+zwiekszyc w najblizszej przyszlosci dokladnosc swoich pomiarow jeszcze <font
+color="#dd0000">milion</font> razy.</font> 
+-->
+
+</table>     
+</table>  </div> 
+<p align="center"><font size="2">Copyright © T.Wibig. All rights reserved.<br> 
+ 
+E-mail:<a href="mailto:wibig@zpk.u.lodz.pl">wibig@zpk.u.lodz.pl</a><br> 
+WWW: <a href="http://www.u.lodz.pl/~wibig"
+target="_top">www.u.lodz.pl/~wibig</a><br>  </font></p> 
+
+
+ </BODY>
+
+
+</HTML>
+

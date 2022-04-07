@@ -1,0 +1,150 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+
+
+<script language="javascript">
+
+function spazi(msgtot,tempo)  {
+  var sp = " ";
+  for (var n=0; n <= (10+msgtot.length-tempo); n++)
+    sp += " ";
+  return(sp);
+}
+
+
+
+
+var msg2 = 
+"The Roland Maze Project                                                    ";
+ var pos2 = 0;
+msg3 = spazi(msg2,0) + msg2 + "         ";
+function ScrollStatus() {
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2);
+	pos2++;
+	if( pos2 > msg3.length ) pos2=0;
+	window.setTimeout("ScrollStatus()",100);
+}
+
+
+
+
+
+</script>
+
+<script language="JavaScript1.1">var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
+<title>The Roland Maze Project (realization)</title>
+<base target="Right">
+</head>
+<body onLoad="ScrollStatus()" ; background="bline2.gif" >
+<div align="right">
+
+<table border="0" width="95%" height="49">
+  <tr>
+    <td>
+<div align="center">
+<center><table border="2" width="100%" height="49">
+      <tr>
+        <td width="63%" height="72">
+<p align="center"><font size=+5
+color="#000000"><strong>The Roland Maze Project</strong></font></td>      
+</tr>    
+
+<table border="2"  width="100%">   
+    <tr><td><center><font size=+2><b>Realisation of the project</b></font></center>
+<font size=+1>
+<br>
+
+ The first stage of project realisation would be devoted to detailed design 
+of
+ detectors and the basic software for the station.
+ In parallel, a series of lectures in high schools will be organized to 
+introduce students
+ and teachers into the area of high energy physics, astrophysics and cosmic 
+ray physics,
+ and also to demonstrate assumptions and capabilities of the Maze project. 
+In course
+ of works on prototype stations and software the seminars 
+ devoted to particular solutions would be organized for teachers and 
+students.
+<br>
+ In the initial phase 2-4 prototype stations would be built and
+successively   started. After several months of work (counting also 
+necessary
+tests)  the system should be sufficient to confirm the realised concept by
+showing   physical registrations of very high energy showers, and correct 
+and
+stable  work of the whole system.<br>
+
+<br>
+ In the proposed version of the Maze project the detection stations 
+ would be separated by distance from half to two kilometers. Larger
+ separation would cause that a station would never (?) in practice
+ register an event in coincidence with any other, so it could realise
+ only self-sufficient tasks, severely narrowing the sense of the whole
+ enterprise.
+However, it is possible to formulate a serious research problem (from
+ cosmic ray physics area) also for distant detection points.
+ Quite recently reports about simultaneous registrations of extensive
+ air showers in arrays separated by even hundreds of kilometers have 
+appeared
+ in the world literature. The idea explaining such phenomenon has 
+been put
+ forward by Gerasimova and Zatsepin already a long time ago. It assumes
+that  the showers have been initiated by the fragments of atomic nucleus
+ produced far above the Earth atmosphere, which managed to separate   
+ by such a great distance. Experimental studies are being carried actually
+ to deny or confirm earlier reports. <br>
+
+ It is evident that there are no principal obstacles to enlarge the 
+activity
+ in the frame of the Maze project outside the borders of Lodz and organize
+ constructing of the detection nets (a few interested schools in one town 
+would be
+ sufficient) at big distances and analysing the data gathered by them 
+ from specific point of view. 
+Every, not very small town is able (depending on
+ resources and capabilities) to join the project. 
+<br>
+Borders of our country are
+ certainly not the borders for physics, and especially for cosmic ray 
+physics.
+ We may expect that similar projects will start also in other countries,
+ for sure at first in US. The exchange of information, concepts, results 
+ and achievements via WWW  would be undoubtedly valuable. It is not 
+excluded,
+ that the global network for observation of Gerasimova-Zatsepin effect
+ could bring very interesting physical results.
+</table>
+
+<TABLE width="100%"><TR>
+    <TD align=right><A href="ang.htm" target="_top"><IMG
+      align=center border=0 height=22 src="up.gif"
+      width=22></A> </TD></TR></TABLE>
+
+
+ </td>
+  </tr>
+</table>
+
+<br>
+</div>
+</body>
+</html>

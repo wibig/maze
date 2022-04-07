@@ -1,0 +1,209 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
+
+var msg2 = 
+"Projekt im. Rolanda Maze                                                    ";
+
+   var pos2 = 0; 
+msg3 = spazi(msg2,0) + msg2 + "          "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",100); 
+} 
+ 
+</script> 
+
+
+<script language="JavaScript1.1">
+var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
+
+
+
+
+<title>efekty edukacyjne</title>
+<base target="Right">
+</head>
+
+<body onLoad="ScrollStatus()" ; background="bline2.gif">
+<div align="right">
+
+<table border="0" width="95%" height="49">
+  <tr>
+    <td><div align="center"><center><table border="2" width="100%" height="49">
+      <tr>
+        <td width="63%" height="72"><p align="center"><font size=+5
+color="#000000"><strong>Efekty edukacyjne</strong></font></td>      
+</tr>       <tr>
+        <td width="63%" height="19"><strong><font size="6" color="#FF0000"><p align="center"></font><font
+        size=+1 color="#FF0000">Co z tego wynikac moze</font></strong></td>
+      </tr>     </table>     </center></div>
+<table border="2" cellpadding="3"
+width="100%">       <tr>
+
+         <td valign="top" >
+
+<font size=+1>
+
+Problem pozyskiwania mlodych ludzi decydujacych sie potem  
+poswiecic nauce, a fizyce w szczegolnosci nie jest 
+problemem typowo polskim, choc moze nas dotyczy on bardziej niz 
+spolecznosci technologicznie rozwinietych bardziej nieco. W  
+calej Europie obserwuje sie zmniejszenie zainteresowania fizyka i  
+jej studiowaniem. Powodow jest wiele i nie miejsce tu na ich analize. 
+ <br>
+Wydaje sie, ze wlaczenie nauczycieli fizyki i uczniow  
+do realizacji projektu bedacego w istocie swej projektem fizycznym sensu  
+stricte (a nawet wiecej, uczynienie z nich bezposrednich  
+realizatorow takiego projektu) przy zastosowaniu najnowszych  
+technologii nie tylko moze, ale z cala pewnoscia 
+spowoduje wzrost zainteresowania, o jakim mowa byla powyzej. 
+ <br>
+Kontakt z osrodkami, w ktorych uprawia sie fizyke na  
+codzien moze ukazac mlodym ludziom calkiem nieznane im  
+(bo niby skad?) mozliwosci co do sposobu zagospodarowania 
+swej wlasnej przyszlosci. Praca w zespole nad testami w  
+fazie uruchamiania aparatury, jak i potem przy opracowywaniu "swoich"  
+wlasnych danych, konstrukcji "wlasnego" oprogramowania, prezentacji  
+wynikow na "swoich" stronach WWW da mlodym ludziom doskonala 
+mozliwosc wykazania sie intelektualnego i
+jednoczesnie   dostosowania sie do pracy w zespole. 
+         <br>
+<!-- Uklad detekcyjny kazdej stacji pozwala na prowadzenie  
+calkiem niezaleznych obserwacji i badan kazdej  
+grupie uczestnikow projektu. Przykladowo badac mozna:
+ <ul><li>
+ tzw. krzywa dekoherencji (czyli powtorzyc historyczne 
+doswiadczenie Maze'a)   
+</li><li>
+ efekt temperaturowy 
+</li><li> 
+ efekt barometryczny 
+</li><li> 
+ rozklady katowe (zenitalny i azymutalny)  
+dla znalezienia efektywnej akceptancji  
+ aparatury w stacji 
+ </li><li> 
+ anizotropie we wspolrzednych niebieskich (Galaktycznych) 
+</li><li>  
+ ksztalt widma energetycznego okolo 10<sup>15</sup>eV 
+</li><li>  
+ korelacje z aktywnoscia Slonca, stanem atmosfery itp. 
+</li></ul> 
+
+Mozliwosci jest bardzo wiele i pole do popisu dla kazdego ogromne. 
+Ciagly kontakt 
+("na zadanie") z pracownikami naukowymi 
+powinien dodatkowo mozliwosci te poszerzac. 
+ --> 
+</td> 
+<td valign="top" >
+
+<font size=+1>
+<br>
+W miare rozwoju projektu poza kontaktami 
+za posrednictwem Internetu 
+wydaje sie istotnym organizowanie zjazdow i spotkan 
+jego uczestnikow: 
+uczniow nauczycieli i pracownikow naukowych. Na  
+spotkaniach tych, poza oczywista 
+wymiana doswiadczen 
+mozna by organizowac sesje (seminaria), na ktorych poszczegolne 
+
+szkoly prezentowalyby swoje osiagniecia. Towarzyszyc by im mogly 
+wyklady z fizyki na tematy 
+bardziej lub mniej zwiazane z projektem Maze. 
+ <br>
+Poniewaz na ostatnich Miedzynarodowych Konferencjach 
+Promieniowania Kosmicznego 
+prezentowane byly w formie komunikatow naukowych projekty podobnych  
+
+systemow, uzasadnionym jest, by i projekt Maze zostal zaprezentowany 
+spolecznosci fizykow w podobny 
+sposob na kolejnej Konferencji, gdy 
+tylko wejdzie on w faze realizacji. Wyniki prac w ramach 
+projektu Maze 
+po dostatecznie dlugim okresie zbierania danych z cala pewnoscia 
+spelniac beda 
+kryteria stawiane pracom publikowanym w recenzowanej 
+literaturze fachowej. 
+ 
+
+</font> </td> 
+
+</table>
+<table border="2" cellpadding="3"
+width="100%">       
+
+<td valign="top" width="100%">
+<font size=+1> Uklad detekcyjny kazdej stacji pozwala na prowadzenie  
+calkiem niezaleznych obserwacji i badan kazdej  
+grupie uczestnikow projektu. Przykladowo badac mozna:
+ <ul><li>
+ tzw. krzywa dekoherencji (czyli powtorzyc historyczne 
+doswiadczenie Maze'a)   
+</li><li>
+ efekt temperaturowy 
+</li><li> 
+ efekt barometryczny 
+</li><li> 
+ rozklady katowe (zenitalny i azymutalny)  
+dla znalezienia efektywnej akceptancji  
+ aparatury w stacji 
+ </li><li> 
+ anizotropie we wspolrzednych niebieskich (Galaktycznych) 
+</li><li>  
+ ksztalt widma energetycznego okolo 10<sup>15</sup>eV 
+</li><li>  
+ korelacje z aktywnoscia Slonca,
+ stanem atmosfery itp. 
+</li></ul> 
+
+Mozliwosci jest bardzo wiele i pole do popisu dla kazdego ogromne. 
+Ciagly kontakt ("na zadanie") z pracownikami naukowymi 
+powinien dodatkowo mozliwosci te poszerzac. 
+ 
+
+    
+  
+     </tr>
+    </table> 
+</td>
+
+  </tr> 
+
+</table> 
+</div>
+<p align="center"><font size="2">Copyright © T.Wibig. All rights reserved.<br>
+
+E-mail:<a href="mailto:wibig@zpk.u.lodz.pl">wibig@zpk.u.lodz.pl</a><br>
+WWW: <a href="http://www.u.lodz.pl/~wibig">www.u.lodz.pl/~wibig</a><br>
+</font></p>
+
+</body>
+</html>

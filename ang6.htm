@@ -1,0 +1,119 @@
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+
+
+<script language="javascript">
+
+function spazi(msgtot,tempo)  {
+  var sp = " ";
+  for (var n=0; n <= (10+msgtot.length-tempo); n++)
+    sp += " ";
+  return(sp);
+}
+
+
+
+
+var msg2 = 
+"The Roland Maze Project                                                    ";
+ var pos2 = 0;
+msg3 = spazi(msg2,0) + msg2 + "         ";
+function ScrollStatus() {
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2);
+	pos2++;
+	if( pos2 > msg3.length ) pos2=0;
+	window.setTimeout("ScrollStatus()",100);
+}
+
+
+
+
+
+</script>
+
+<script language="JavaScript1.1">var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
+<title>The Roland Maze Project (about us)</title>
+<base target="Right">
+</head>
+ <body onLoad="ScrollStatus()" ; background="bline2.gif" >
+<div align="right">
+
+<table border="0" width="95%" height="49">
+  <tr>
+    <td>
+<div align="center">
+<center><table border="2" width="100%" height="49">
+      <tr>
+        <td width="63%" height="72">
+<p align="center"><font size=+5
+color="#000000"><strong>The Roland Maze Project</strong></font></td>      
+</tr>    
+<table border="2"  width="100%">
+    <tr><td><center><font size=+2><b>Cosmic ray studies in Lodz</b></font></center>
+<font size=+1>
+<br>
+  From over forty years experimental studies of extensive air showers
+ have been performed in Lodz. At the beginning the technology of production
+ of glass Geiger-Mueller tubes with outer cathode has been elaborated here.
+ The first small air shower array has been built of such counters. The results
+ obtained on this array allowed the Lodz centre, led then by Aleksander Zawadzki,
+ to achieve an important place among the leading groups studying the passage
+ of high energy particles through the atmosphere. The Lodz array has been
+ then systematically developed and it was always fit both technologically
+ and conceptually to the highest world standards. In the course of time
+ the registration technique of large area scintillation counters and Conversi
+ counters giving very precise measurement of particle densities has been introduced.
+ Later the array was enriched with two detectors of the muon component of the showers:
+ the ground-level hodoscope covered by a half meter layer of lead and the
+ underground hodoscope placed at the depth of 15 m. In order to
+ increase the range of distances in studied particle distributions an autonomous
+ distant detection point with its own trigger and time registration system
+ has been added. From the point of view of the Maze project, the Lodz array
+ of those times resembled the system of two detection points planned in the project.
+ Obviously, the synchronization of the distant detection point could not be
+ realised via GPS, which at those times did not exist at all. In the last important
+ step of development the Lodz array has been equipped with a hadron detector
+ based on technology of wide spacing spark chambers and semi-calorimetric
+ measurement of hadron energy.
+  <br>
+ Actually the Lodz array undergoes subsequent deep modernization.
+ Neutron counters and large area underground muon telescope, which is under
+ construction, will be used not only for extensive air shower studies,
+ but also for research in the area of Solar physics.
+ It is worth noticing, that the Lodz air shower array has been continuously
+ working for forty years and rich experiences gathered during whole this
+ time make the team of physicists connected to this array fully
+ prepared to coordinate and lead the works in frame of the Maze project.
+</td></tr>
+</table>
+<TABLE width="100%"><TR>
+    <TD align=right><A href="ang.htm" target="_top"><IMG
+      align=center border=0 height=22 src="up.gif"
+      width=22></A> </TD></TR></TABLE>
+
+  </td>
+  </tr>
+</table>
+
+<br>
+</div>
+</body>
+</html>

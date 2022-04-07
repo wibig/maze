@@ -1,0 +1,209 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
+
+var msg2 = 
+"Projekt im. Rolanda Maze                                                    ";
+
+   var pos2 = 0; 
+msg3 = spazi(msg2,0) + msg2 + "         "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",100); 
+} 
+ 
+</script>
+<script language="JavaScript1.1">
+var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
+
+
+ <title>efekt Gierasimowej-Zacepina</title>
+<base target="Right">
+</head>
+
+<body onLoad="ScrollStatus()" ; background="bline2.gif">
+
+<div align="right">
+
+<table border="0" width="95%" height="49">
+  <tr>
+    <td><div align="center">
+<center><table border="2" width="100%" height="49">
+      <tr>
+        <td width="63%" height="72">
+<p align="center"><font size=+5
+color="#000000"><strong>Efekt Gierasimowej-Zacepina</strong></font>
+</td>      
+</tr>       <tr>
+   
+     <td width="63%" height="19"><strong><font size="6" color="#FF0000">
+<p align="center"></font><font
+        size=+1 color="#FF0000"> Jak mozliwa jest
+rejestracja jednoczesnych 
+zdarzen odleglych o setki
+kilometrow</font></strong></td>       </tr>     </table>    
+</center></div>
+<table border="2" cellpadding="3" width="100%"> 
+
+<td valign="top">
+
+<font size=+1 color="000000">
+
+
+Mozliwym jest jednak sformulowanie powaznego problemu badawczego  
+(z zakresu fizyki promieniowanie kosmicznego)
+ i dla odleglych punktow 
+detekcyjnych. Calkiem niedawno w literaturze  
+fachowej
+[T. Wada <IT> i in.</IT>, 
+<font color="000000">
+Nucl. Phys. B (Suppl.) </font> vol. <font color="000000">75A</font> , 330 (1999); 
+O. Carrel i M. Martin,<font color="000000">
+Phys. Lett. 
+ B</font>  vol.  <font color="000055">325</font> , 221 (1993)] 
+pojawily sie doniesienia o zauwazeniu jednoczesnej rejestracji  
+wielkich pekow 
+atmosferycznych przez aparatury odlegle nawet o 
+setki kilometrow. Koncepcja wyjasnienia 
+tego zjawiska
+podana
+zostala przez Gierasimowa i  
+Zacepina
+ [N.M. Gerasimova i G.T. Zatsepin, 
+<font color="000000">
+ Sov. Phys. JETP</font>  vol. <font color="000000">
+11</font> , 
+899 (1960)] 
+juz dawno temu
+i polega ona na przyjeciu, iz peki te 
+zainicjowane zostaly 
+przez fragmenty jadra atomowego, ktore  
+w wyniku zderzenia z fotonami wypelniajacymi gesto calkiem Uklad Sloneczny 
+rozfragmentowalo daleko jeszcze poza granica Ziemskiej atmosfery. Poniewaz zdarzylo sie to tak daleko fragmenty te
+rozejsc 
+sie zdazyly na duza odleglosc i przy szczesliwym zbiegu okolicznosci mogly
+wywolac dwa jednoczesne peki bardzo daleko od siebie.
+
+Obecnie trwaja badania majace na celu potwierdzenie lub obalenie  
+wczesniejszych doniesien. Jeden z takich eksperymentow  
+obejmuje swoim zasiegiem cala niemal Japonie. 
+
+ 
+
+ </td> </td>
+
+    
+       <td valign="top"><p align="center"><img src="geza.gif"    
+  
+  alt="widmo" width="250" height="235"><br>mechanizm efektu Gierasimowej-Zacepina<br> 	
+</p>         
+ 
+</td>
+
+
+</font>
+
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</div>
+<p align="center">
+<font size="2">Copyright © T.Wibig. All rights reserved.<br>
+
+E-mail:<a href="mailto:wibig@zpk.u.lodz.pl">wibig@zpk.u.lodz.pl</a><br>
+WWW: <a href="http://www.u.lodz.pl/~wibig">www.u.lodz.pl/~wibig</a><br>
+</font></p>
+
+</body>
+</html>

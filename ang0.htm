@@ -1,0 +1,649 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Roland Maze</TITLE>
+
+
+
+<META content="text/html; charset=windows-1251" http-equiv=Content-Type>
+<SCRIPT language=javascript> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
+
+var msg2 = 
+" The Roland Maze Project                                                    ";
+
+   var pos2 = -1; 
+msg3 = spazi(msg2,0) + msg2 + "        "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	if( pos2 < 0 ) newImage();
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",100)
+} 
+ 
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+
+        /* ####################### begins list of images to be used
+         ####################### */
+        currentIndx=0;
+        MyImages=new Array(6);
+        MyImages[0]='rm1.jpg';
+        MyImages[1]='rm2.jpg';
+        MyImages[2]='rm3m.jpg';
+        MyImages[3]='rm1m.jpg';
+        MyImages[4]='rm2m.jpg';
+        MyImages[5]='rm3.jpg';
+        /* ####################### now we preload the images ####################### */
+        imagesPreloaded = new Array(4)
+        for (var i = 0; i < 5 ; i++)
+        {
+                imagesPreloaded[i] = new Image(120,120)
+                imagesPreloaded[i].src=MyImages[i]
+        }
+        /* ####################### this function loads a random image ####################### */
+        function newImage() {
+        currentIndx=Math.round(Math.random()*4)
+        document.theImage.src=MyImages[currentIndx]
+        }
+
+</SCRIPT>
+
+<SCRIPT language=JavaScript1.1>
+var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</SCRIPT>
+
+<META content="MSHTML 5.00.2920.0" name=GENERATOR></HEAD>
+
+
+<body background="bline2.gif" onload=ScrollStatus()  >
+
+
+
+
+
+
+<div align="right">
+
+<table border="0" width="95%" height="49">
+  <tr>
+    <td>
+<div align="center">
+<center><table border="2" width="100%" height="49">
+      <tr>
+        <td width="63%" height="72">
+<p align="center"><font size=+5
+color="#000000"><strong>The Roland Maze Project</strong></font></td>      
+</tr>    
+  
+   </table>
+
+
+   </center></div>
+   <table border="2"  width="100%">
+    <tr><td valign="top">
+<font size=+2>
+
+ <B>Roland Maze</B></font><font size=+1>
+ was a co-discoverer of Extensive Air Showers of cosmic rays.
+ The array built by him on the roof of Ecole Normale Superieure
+ in Paris enabled the observation of simultaneous registrations of high
+ energy particles in two detectors separated by ~30 m. 
+ His name has been placed together with the name of Pierre Auger in the 
+headers
+ of the <a href="am1.ps">first papers of 1938</a>  reporting about the discovery.
+<br>
+
+ At the beginning of the fifties, when the cosmic ray laboratory in Lodz
+ was being formed, Roland Maze closely collaborated with Polish
+ physicists. It is not easy to estimate nowadays his role in creation
+ of the Lodz group and its first scientific achievements. He was together 
+ with Aleksander Zawadzki, Juliusz Hibner, Jerzy Gawin
+ and Jerzy Wdowczyk (among others) the co-author of many papers, which 
+established
+ the position of Lodz among distinguished centres of high energy physics in 
+the world.<br>
+
+ Comparing the scale and goals of presented further project with those
+ of the international and over 100 mln $ Auger Project, it seems justified 
+ to call our enterprise with the name of Roland Maze, as a tribute to  
+ this great scientist.<br></font></td>
+          <TD vAlign=top>
+            <P align=center><IMG alt="Roland Maze in Lodz (1968) " height=400 name=theImage 
+            src="rm1.jpg" width=300>
+	    </P></TD>
+  </tr>
+</table>
+
+<table border="2"  width="100%">
+    <tr><td>
+<center><img src="widmo.gif" ><br><br><br><font size=+1>
+Cosmic ray energy spectrum.</font></center></td><td valign="top">
+<font size=+1>
+<center><font size=+2><b>Physical background</b></font></center><font size=+1><br>
+The phenomenon of cosmic radiation is known for 90 years. It was discovered (as
+a <I>Hoehenstrahlung</i>) by Viktor Hess and now we knew that
+the Earth is constantly bombarded by the high energy particles coming from the
+outer space. Cosmic ray studies are recently intensively developed, especially
+ in the region of the upper limit of energy spectrum (see Figure beside), where 
+ several single cases of particles with energies exceeding 10<sup>20</sup>eV
+ (~50 J) have been observed. Such energies are 100 mln times 
+ higher than those which can be studied in laboratory experiments
+ and most probably higher than those that can ever be achieved in
+ experiments built by human hand. Apart from the obvious, but extremely
+ compound problem what is going on with matter during collisions
+ with such enormous energy release, the question what astrophysical
+ mechanisms are at all able to produce particles with such energies
+ is also very intriguing.
+ If we add to this that the nature of these particles
+ is also unknown (they can be protons, compound atomic nuclei, gamma 
+quanta,
+ neutrinos or even yet undiscovered new particles predicted by theories
+ beyond the so called Standard Model), it can not be surprising, that 
+ to find answers to at least some of these questions
+ just now large ground level arrays are being built (<A
+HREF="http://www.auger.org">Auger Observatory</a>)
+ and quantitatively completely new satellite experiments
+ (<A HREF="http://owl.gsfc.nasa.gov/intro.html">OWL</a>,
+<A HREF="http://www.ifcai.pa.cnr.it/Ifcai/airwatch.html">Air Watch</a>, 
+<A HREF="http://www.ifcai.pa.cnr.it/~EUSO">EUSO</a> )
+ of budgets reaching hundreds mln $ are being planned.<br>
+<center><img src="ani.jpg">                    <br>
+Arrival directions of most energetic cosmic ray events.</center></font></font>
+ </td></tr>
+</table>
+<table border="2"  width="100%">   
+    <tr><td>
+<center><font size=+2><b>Important technical problems</b></font></center><font size=+1><br>
+ The main difficulty is due to the fact that the flux of particles
+ with energies above 10<sup>20</sup>eV is of the order of 1 particle per square 
+km
+ per century (or even lower), so the detector area has to be sufficiently
+ large to obtain required result in reasonable time. The biggest actually 
+working 
+ experiment <A Href="http://www-akeno.icrr.u-tokyo.ac.jp/AGASA">AGASA</a>
+ consists of particle counters spread over an area of 
+100km<sup>2</sup>.
+ During ~20 years of work it has registered 17 such events 
+(as has been claimed at the last cosmic ray conference in Hamburg in 
+August this year,
+but there are opinions that this number can be overestimated).
+ In the projected Auger experiment 1600 detectors will be spread over 10 
+times
+ bigger area. The main goal of such experiments is to determine (or rather 
+estimate)
+ in each registered event the energy of the particle which has initiated in 
+the
+ atmosphere a phenomenon called an extensive air shower, i.e. the cascade 
+of
+ particles (mainly photons, electrons and muons) with lateral size at the
+ observation level measured in kilometers. Such estimation is performed 
+basing
+ on measurement of particle density in a shower in a few points separated
+ by several hundreds meters (1.5 km in the Auger experiment). Moreover, 
+measuring
+ the times of shower arrival to different detection points one can 
+determine
+ the direction on the celestial sphere from which the primary particle has 
+come.  <br>
+
+ The single detector is essentially a very simple device. It usually 
+consists of
+ a few scintillation (or Cherenkov) counters connected to the electronic 
+system
+ with a simple coincidence trigger and converters of time and amplitude of 
+signals to 
+ digital codes. The essence of large area experiments is a method of 
+synchronization
+ and communication between detectors and a system of collecting and storing 
+the data.
+This can be performed by normal optical fibers, like in the AGASA 
+experiment,
+or by radio, like in the Yakutsk array or in the Auger experiment. 
+
+A non-trivial
+problem is also maintaining  stable and reliable performance of the system
+(service) and  providing power supply to the detectors separated in total 
+by
+tens of kilometers.
+</font>
+</table>
+
+<table border="2"  width="100%">   
+    <tr><td  valign="top">
+    <center><font size=+2><b>Concept of the Maze project</b></font></center> <br>
+<font size=+1> In the proposed experiment detection points would be placed in the 
+buildings
+ (or better on the roofs) 
+of Lodz high schools. Their net is dense enough (see Figure beside)
+ to enable observation of particles starting from energies of 10<sup>18</sup>eV,
+ for which expected frequency of interesting registrations is much greater
+ (several thousands times) than for cases from the narrow region above
+ 10<sup>20</sup>eV. So one can expect first interesting experimental results 
+already
+ in the preliminary stage of realisation of the project with a small number
+ of detection points. While the large experiments are dedicated exclusively 
+ to big science, in our project each station (school) would constitute 
+autonomous
+ air shower array. Small, but developed enough to provide results which 
+could
+ themselves serve as material to interesting studies related to cosmic ray 
+ physics and to independent developing of data analysis methods.<br>
+
+
+For available spacing between detectors in a station (of the order of 
+~10 m) 
+ the chance of observing highest energy showers in one separate station is 
+very small,
+ but a special trigger system may provide full efficiency of registration 
+of showers
+ with energies ~ 10<sup>15</sup>eV falling on the detection area 
+(100 m<sup>2</sup>).
+ For a specific realisation (discrimination levels) one can obtain sensible 
+ frequency of events counted in 1 min<sup>-1</sup>.<br>
+
+ To enable independent observations in a separate station (high school) 
+each 
+ of them should be equipped with 4 scintillation counters of area
+ ~ 1 m<sup>2</sup>.
+ The electronic system should enable measurement of relative times with 
+accuracy
+ of ~ 5 ns (that would give angular resolution of ~ 5<sup>o</sup>) and
+ measurement of 
+signal amplitudes from all the detectors.
+<br>
+The system of converters and
+master elaboration  would be connected to a PC-class computer, on which
+preliminary data analysis  and storing would be performed. The scheme of a
+single detection station is shown  in the figure.
+<br>
+ 
+To enable coordination of work of all the stations, which is the essence of 
+described
+ project, the GPS system seems at the moment the best for time 
+synchronization.
+ In the standard version GPS provides absolute time with sufficient 
+accuracy
+ (~300 ns) to synchronize events in different station. It seems
+reasonable  to increase accuracy to several nanoseconds 
+to enable additional
+determination of particle direction in cases of  simultaneous registrations 
+in
+several stations, that are expected for the highest  energy showers, 
+studies
+of which are the main scientific goal of this project.<br>
+
+ Communication between stations  
+would be realised via Internet (see the figure to the right).
+ Permanent connection to the net is not demanded, as the data stored in
+ computer memory can be only once per some time sent to the central server.
+ The server would put the data in some order, store and archivise them,
+ and make accessible for each group on demand.
+ In this way each group taking part in the realisation of the project would 
+be
+ able to independently analyse the whole gathered data and perform its own 
+original
+ studies.
+</font>
+</td><td><center>
+<img src="lodz300.jpg" align="top"></center>
+<center><font size=+1>
+
+Map of high schools in the Lodz region.</font></center><br><br>
+<img src="szk4e.gif" align="top">
+<center>
+The schematic view of the single Maze Project station.</center><br><br>
+<center>
+<img src="siecalle.gif" align="top"></center>
+<center>
+The idea of the Maze Project network.</center>
+</table>
+
+<table border="2"  width="100%">   
+    <tr><td><center><font size=+2><b>Realisation of the project</b></font></center>
+<font size=+1>
+<br>
+
+ The first stage of project realisation would be devoted to detailed design 
+of
+ detectors and the basic software for the station.
+ In parallel, a series of lectures in high schools will be organized to 
+introduce students
+ and teachers into the area of high energy physics, astrophysics and cosmic 
+ray physics,
+ and also to demonstrate assumptions and capabilities of the Maze project. 
+In course
+ of works on prototype stations and software the seminars 
+ devoted to particular solutions would be organized for teachers and 
+students.
+<br>
+ In the initial phase 2-4 prototype stations would be built and
+successively   started. After several months of work (counting also 
+necessary
+tests)  the system should be sufficient to confirm the realised concept by
+showing   physical registrations of very high energy showers, and correct 
+and
+stable  work of the whole system.<br>
+
+<br>
+ In the proposed version of the Maze project the detection stations 
+ would be separated by distance from half to two kilometers. Larger
+ separation would cause that a station would never (?) in practice
+ register an event in coincidence with any other, so it could realise
+ only self-sufficient tasks, severely narrowing the sense of the whole
+ enterprise.
+However, it is possible to formulate a serious research problem (from
+ cosmic ray physics area) also for distant detection points.
+ Quite recently reports about simultaneous registrations of extensive
+ air showers in arrays separated by even hundreds of kilometers have 
+appeared
+ in the world literature. The idea explaining such phenomenon has 
+been put
+ forward by Gerasimova and Zatsepin already a long time ago. It assumes
+that  the showers have been initiated by the fragments of atomic nucleus
+ produced far above the Earth atmosphere, which managed to separate   
+ by such a great distance. Experimental studies are being carried actually
+ to deny or confirm earlier reports. <br>
+
+ It is evident that there are no principal obstacles to enlarge the 
+activity
+ in the frame of the Maze project outside the borders of Lodz and organize
+ constructing of the detection nets (a few interested schools in one town 
+would be
+ sufficient) at big distances and analysing the data gathered by them 
+ from specific point of view. 
+Every, not very small town is able (depending on
+ resources and capabilities) to join the project. 
+<br>
+Borders of our country are
+ certainly not the borders for physics, and especially for cosmic ray 
+physics.
+ We may expect that similar projects will start also in other countries,
+ for sure at first in US. The exchange of information, concepts, results 
+ and achievements via WWW  would be undoubtedly valuable. It is not 
+excluded,
+ that the global network for observation of Gerasimova-Zatsepin effect
+ could bring very interesting physical results.</font>
+</table>
+
+
+
+<table border="2"  width="100%">
+    <tr><td><center><font size=+2><b>Educational impact</b></font></center>
+<font size=+1>
+<br>
+
+
+ The problem of finding young people who could eventually decide to devote
+ themselves to science, and to physics in particular, is not a specific 
+Polish
+ problem, although it can relate to us in greater extent than to societies 
+ a bit more technologically developed. In whole Europe the diminishing
+interest  in physics and in studying physics can be observed. The reasons 
+are
+plural  and this is not a place for analysing them.
+<br> 
+ It seems that introducing teachers of physics and students to the 
+realisation
+ of the project being in itself the physical project <i> sensu stricte</i>
+(and even more,  making them direct performers of such a project), with 
+the
+use of newest technologies,  not only may, but for sure will cause an 
+increase
+of interest, about which we wrote  above.
+<br>
+ Contact with centres where physics is done every day may reveal to the
+young people  quite unknown for them possible ways of arranging their own
+future.  The work in group on tests in the phase of starting the array, 
+and
+then on   analysing "their own" data, constructing "their own" software,
+presenting  results on "their own" WWW pages, will give those young people
+fantastic   possibility to show themselves off intellectually and
+simultaneously to adjust  themselves to the work in a team. 
+<br>
+ The detection system of a station allows to conduct quite independent
+ observations and studies for each group participating in the project.
+ One can study for example:
+<ul><li>
+
+   de-coherence curve (i.e. to repeat the historical experiment of Maze)
+
+</li>
+<br><li>
+ temperature effect
+
+</li>
+<br><li>
+   barometric effect
+
+</li>
+<br><li>
+  angular distributions (zenithal and azimuthal)
+     in order to find effective
+      acceptance of the station array
+
+</li>
+<br><li>
+   anisotropy in celestial coordinates (and also Galactic coordinates)
+
+</li>
+<br><li>
+   shape of energy spectrum around 10<sup><font size=+1>15</font></sup>eV
+
+</li>
+<br><li>
+   correlations with activity of the Sun, the state of atmosphere, etc.
+</li></ul>
+<br>
+ There are quite a few possibilities and the field for showing off for
+everybody  is huge. Permanent contact ("on demand") with researchers 
+should
+additionally  broaden these possibilities.
+<br>
+ In course of project development, beside communication via Internet, it 
+seems
+ important to organize gatherings and meetings of its participants: 
+students,
+ teachers and researchers. During such meetings, apart from the obvious
+exchange   of information, sessions (seminars) should be organized, at 
+which
+schools would   present their achievements. The sessions could be 
+accompanied
+by the lectures  on physical topics more or less closely related to the 
+Maze
+project.  
+ Because during the last International Cosmic Ray Conferences projects of
+ similar systems have been presented in the form of short communications,
+ it is very important to present also the Maze project to the society of
+physicists  in a similar way at the next Conference, as soon as the 
+project
+enters the stage  of realisation. The results of works conducted in the 
+frame
+of the Maze   project after sufficiently long period of data acquisition 
+would
+for sure  fulfill the criteria demanded from scientific works published in
+refereed  professional literature.
+</font>
+</table>
+
+
+<table border="2"  width="100%">   
+    <tr><td><center><font size=+2><b>Other similar projects</b></font></center>
+<font size=+1>
+<br>
+<ul><li>
+ 
+<A Href= http://csr.phys.ualberta.ca/~alta>ALTA</A> (Large Area Time
+Coincidence Array) - University of Alberta, Canada. 
+Each station will have scintillation counters set in a triangle
+  on a roof of a school. %Because schools in this region are rather
+  sparsely dispersed, 
+The distance between the stations will be of the order
+  of 10 km, so the array will be dedicated exclusively to looking for
+  Gerasimova-Zatsepin effect. 
+
+</li>
+<br><li> <A HREF=http://www.phys.washington.edu/~walta>WALTA</A> - University
+of Washington, Seattle. In the Seattle area
+each station will be equipped with three 1 m<sup>2</sup> scintillation 
+counters. 
+  Up to the year 2002 installing of 10 - 20 detection points is planned.
+
+</li><br><li>   
+<A HREF=http://www.chicos.caltech.edu>CHICOS</A> - Caltech, California State
+Univ., Univ. of California w Irvine.
+The project assumes %taking over used detectors from the 
+old 
+experiment in New Mexico (closing just now) and 
+placing detectors in schools in the
+  Los Angeles area during three years period (up to 2003). 
+First 9 stations 
+  are being arranged actually. 
+Plans assume that 10000 students
+  and 300 teachers will be involved.% in the works !
+</li><br><li>   
+  
+<A HREF=http://physics.unl.edu/~gsnow/crop/crop.html>CROP</A> -
+University of Nebraska. In the first stage of 
+realisation 
+four stations will be started in the Lincoln/Omaha area. 
+The
+project will   engage 30 schools.
+ equipped with 1 m<sup>2</sup> scintillation detectors.
+</li><br><li>   
+
+
+<A HREF=http://www.hep.physics.neu.edu/scrod>SCROD</A> - Northeastern
+University, Boston.Avalanche photodiodes 
+ are planned to be used for registration of light from scintillators.
+  The prototype of single detector has been designed and successfully
+  tested.
+
+ 
+</li></ul>
+ 
+ </font>
+</table>
+
+ 
+<table border="2"  width="100%">
+    <tr><td><center><font size=+2><b>Cosmic ray studies in Lodz</b></font></center>
+<font size=+1>
+<br>
+  From over forty years experimental studies of extensive air showers
+ have been performed in Lodz. At the beginning the technology of production
+ of glass Geiger-Mueller tubes with outer cathode has been elaborated here.
+ The first small air shower array has been built of such counters. The results
+ obtained on this array allowed the Lodz centre, led then by Aleksander Zawadzki,
+ to achieve an important place among the leading groups studying the passage
+ of high energy particles through the atmosphere. The Lodz array has been
+ then systematically developed and it was always fit both technologically
+ and conceptually to the highest world standards. In the course of time
+ the registration technique of large area scintillation counters and Conversi
+ counters giving very precise measurement of particle densities has been introduced.
+ Later the array was enriched with two detectors of the muon component of the showers:
+ the ground-level hodoscope covered by a half meter layer of lead and the
+ underground hodoscope placed at the depth of 15 m. In order to
+ increase the range of distances in studied particle distributions an autonomous
+ distant detection point with its own trigger and time registration system
+ has been added. From the point of view of the Maze project, the Lodz array
+ of those times resembled the system of two detection points planned in the project.
+ Obviously, the synchronization of the distant detection point could not be
+ realised via GPS, which at those times did not exist at all. In the last important
+ step of development the Lodz array has been equipped with a hadron detector
+ based on technology of wide spacing spark chambers and semi-calorimetric
+ measurement of hadron energy.
+  <br>
+ Actually the Lodz array undergoes subsequent deep modernization.
+ Neutron counters and large area underground muon telescope, which is under
+ construction, will be used not only for extensive air shower studies,
+ but also for research in the area of Solar physics.
+ It is worth noticing, that the Lodz air shower array has been continuously
+ working for forty years and rich experiences gathered during whole this
+ time make the team of physicists connected to this array fully
+ prepared to coordinate and lead the works in frame of the Maze project.</font>
+</td></tr>
+</table>
+   
+<table border="2"  width="100%">   
+    <tr><td><center><font size=+2><b>Summary</b></font></center>
+<font size=+1>
+
+
+To summarize only one (main scientific) aspect of the Maze project:
+the cosmic ray energy spectrum above 10<sup>18</sup>eV, we would like to point 
+out
+that the collection area of the Maze experiment is comparable to the bigest
+existing air shower array AGASA. Some of our solutions (e.g., four 
+independent
+detectors in each station) make our planned array even better, or at least
+different. Results on energy spectrum from our project are expected to be
+of similar quality like these of other experiments published nowadays in 
+top
+physics journals and should enrich the still unsufficient statistic of 
+ultra
+high energy cosmic ray events. Additionally, the access to raw data and
+measurement details gives an excelent opportunity to study important 
+physical
+problems on much deeper level taht it is possible now with only partially
+published data from other groups like, e.g., AGASA. This opens the new wide
+area for theoretical interpretation of cosmic ray spectra and giant air 
+shower
+properties. <br>
+
+The second important aspect for the Maze project is its educational
+impact which could be even more important than the scientific one. <br>
+
+The experience gathered for about forty years by the people in Lodz 
+laboratory
+gives the perspectives that the project shortly described here could be
+successfully realised.
+
+
+
+
+
+
+ <br>
+
+<br><strong>
+        <font size=+2 color="#ff0000"><p>
+<a href="eu_e.htm" target="_top">
+The Project as   <img src="eu-flag.gif" border="0" alt="EU"
+allign="baseline" width=40>
+Integrated Project
+</a>
+        </font>
+</strong></font></td>       </tr>
+
+</table>
+<TABLE width="100%"><TR>
+    <TD align=right><A href="ang.htm" target="_top"><IMG
+      align=center border=0 height=22 src="up.gif"
+      width=22></A> </TD></TR></TABLE>
+</tr>  
+</table>
+
+<br>
+</div>
+</body>
+</html>

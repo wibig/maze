@@ -1,0 +1,289 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+<head>
+ 
+ 
+<script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
+ 
+ 
+ 
+ 
+var msg2 = "Projekt im. Rolanda Maze                                         ";  
+var pos2 = 0;  msg3 = spazi(msg2,0) + msg2 + "                      "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",100); 
+} 
+ 
+ 
+ 
+ 
+ 
+</script> 
+ <title>Left Frame #1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=en-us">
+<base target="Left">
+</head>
+<!--
+<body onLoad="ScrollStatus()" ; bgcolor="#663322"> -->
+<body bgcolor="#800000"> 
+<noscript> 
+NOSCRIPT 
+</noscript> 
+ 
+<script type="text/javascript"> 
+if (document.images) 
+{ 
+  bud0    = new Image; 
+  bud1    = new Image; 
+  rmaze0 = new Image; 
+  rmaze1 = new Image; 
+  inne0 = new Image; 
+  inne1 = new Image; 
+  det0    = new Image; 
+  det1    = new Image; 
+  onas0= new Image; 
+  onas1= new Image; 
+  siec0= new Image; 
+  siec1= new Image; 
+  edu0= new Image; 
+  edu1= new Image; 
+  fiz0= new Image; 
+  fiz1= new Image; 
+  uwa0= new Image; 
+  uwa1= new Image; 
+  mati0= new Image; 
+  mati1= new Image; 
+  news0= new Image; 
+  news1= new Image; 
+  szk0= new Image; 
+  szk1= new Image; 
+ 
+  bud0.src    = "bud0.gif"; 
+  bud1.src    = "bud1.gif"; 
+  rmaze0.src = "rmaze0.gif"; 
+  rmaze1.src = "rmaze1.gif"; 
+  inne0.src = "inne0.gif"; 
+  inne1.src = "inne1.gif"; 
+  det0.src    = "det0.gif"; 
+  det1.src    = "det1.gif"; 
+  onas0.src= "onas0.gif"; 
+  onas1.src= "onas1.gif"; 
+  siec0.src= "siec0.gif"; 
+  siec1.src= "siec1.gif"; 
+  edu0.src= "edu0.gif"; 
+  edu1.src= "edu1.gif"; 
+  fiz0.src= "fiz0.gif"; 
+  fiz1.src= "fiz1.gif"; 
+  uwa0.src= "uwa0.gif"; 
+  uwa1.src= "uwa1.gif"; 
+  mati0.src= "mati0.gif"; 
+  mati1.src= "mati1.gif"; 
+  news0.src= "news0.gif"; 
+  news1.src= "news1.gif"; 
+  szk0.src= "szk0.gif"; 
+  szk1.src= "szk1.gif"; 
+} 
+ 
+function chgImg(name,image) 
+{ 
+  if (document.images) 
+  { 
+    document[name].src = eval(image+".src"); 
+  } 
+} 
+</script> 
+ <script language="JavaScript1.1">
+var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
+
+ <!-- Image with table -->
+<table border="0" cellpadding="0" cellspacing="0" width="160">
+<tr>
+ <td rowspan="18">
+<img name="N2_frame3" src="2_frame3.gif" border="0"
+WIDTH="10" HEIGHT="340"></td>
+
+
+<tr><td><img name="N4_frame3" src="4_frame3.gif" border="0" WIDTH="140"
+HEIGHT="5"></td></tr>  
+
+
+<td><a href="index.htm" target="_top"  
+onMouseOver='chgImg("mati","mati1")'      
+onMouseOut='chgImg("mati","mati0")'>
+<img name="mati" src="mati0.gif" border="0" alt="Projekt Maze" WIDTH="140"
+HEIGHT="72"></a>
+ </td>
+<td rowspan="18"><img name="N3_frame3"
+src="3_frame3.gif" border="0" WIDTH="10" HEIGHT="340"></td>
+   </tr>
+
+<tr><td><a href="fizyka/fizyka.htm" target="_top"
+onMouseOver='chgImg("fiz","fiz1")'       onMouseOut='chgImg("fiz","fiz0")'><img
+name="fiz" src="fiz0.gif" border="0" alt="fizyka" WIDTH="140"
+HEIGHT="24"></a></td>    </tr>    
+
+
+<tr><td><a href="budowa.htm" target="Right"   
+onMouseOver='chgImg("bud","bud1")'      
+onMouseOut='chgImg("bud","bud0")'><img name="bud" src="bud0.gif" border="0"
+alt="budowa" WIDTH="140" HEIGHT="24"></a></td></tr>    
+ 
+
+  <tr><td><a href="detektor.htm" target="Right"   
+onMouseOver='chgImg("det","det1")'      
+onMouseOut='chgImg("det","det0")'><img name="det" src="det0.gif" border="0"
+alt="detektor" WIDTH="140" HEIGHT="24"></a></td>    </tr> 
+
+<tr><td><a
+href="siec.htm" target="Right"    onMouseOver='chgImg("siec","siec1")'      
+onMouseOut='chgImg("siec","siec0")'><img name="siec" src="siec0.gif"
+border="0" alt="ogolna koncepcja" WIDTH="140" HEIGHT="24"></a></td>    </tr>  
+
+<tr><td><a href="edukacja.htm" target="Right"
+   onMouseOver='chgImg("edu","edu1")'   
+   onMouseOut='chgImg("edu","edu0")'><img name="edu" src="edu0.gif"
+border="0" alt="edukacja" WIDTH="140" HEIGHT="24"></a></td></tr>  
+
+<tr><td><a href="inne.htm" target="Right"
+   onMouseOver='chgImg("inne","inne1")'   
+   onMouseOut='chgImg("inne","inne0")'><img name="inne" src="inne0.gif"
+border="0" alt="inne podobne projekty" WIDTH="140" HEIGHT="24"></a></td>   
+</tr>    
+<tr><td><a href="my.htm" target="Right"
+   onMouseOver='chgImg("onas","onas1")'   
+   onMouseOut='chgImg("onas","onas0")'><img name="onas" src="onas0.gif"
+border="0" alt="o nas" WIDTH="140" HEIGHT="24"></a></td>    </tr> 
+
+  <tr><td><a href="news.htm" target="Right"
+   onMouseOver='chgImg("news","news1")'   
+   onMouseOut='chgImg("news","news0")'><img name="news"
+src="news0.gif" border="0" alt="aktualnosci" WIDTH="140"
+HEIGHT="24"></a></td>    </tr>  
+ 
+  <tr><td><a href="szk.htm" target="Right"
+   onMouseOver='chgImg("szk","szk1")'   
+   onMouseOut='chgImg("szk","szk0")'><img name="szk"
+src="szk0.gif" border="0" alt="uczestnicy projektu" WIDTH="140"
+HEIGHT="24"></a></td>    </tr>  
+ 
+   <tr><td><a href="opi.htm" target="Right"
+   onMouseOver='chgImg("uwa","uwa1")'   
+   onMouseOut='chgImg("uwa","uwa0")'><img name="uwa"
+src="uwa0.gif" border="0" alt="uwagi, opinie, pytania" WIDTH="140"
+HEIGHT="24"></a></td>
+   </tr>
+   <tr>
+
+<tr><td><a href="rmaze.htm" target="Right"
+   onMouseOver='chgImg("rmaze","rmaze1")'   
+   onMouseOut='chgImg("rmaze","rmaze0")'><img name="rmaze"
+src="rmaze0.gif" border="0" alt="Roland Maze" WIDTH="140"
+HEIGHT="24"></a></td>    </tr> 
+
+<tr><td><a href="mazeeng.htm" target="Right"
+ >
+<img 
+src="fluk.gif" border="0" alt="wersja eksportowa" WIDTH="40"
+HEIGHT="24"></a></td> 
+  </tr>   
+
+
+
+<tr>
+
+<tr>
+<td><!--<img name="N4_frame3" src="5_frame3.gif" border="0" WIDTH="140" HEIGHT="5"> -->
+</td></tr>
+</table>
+<!--
+
+<img name="N4_frame3" src="1_frame3.gif" border="0" WIDTH="140" HEIGHT="5"
+><img name="N4_frame3" src="1_frame3.gif" border="0" WIDTH="140" HEIGHT="5">
+ --> <table border="0" cellpadding="0" cellspacing="0" width="160">
+  <!-- <tr>
+addon 
+    <td width="160" height="435" bgcolor="#0098E0">&nbsp;</td> -->
+</td>
+  </tr>
+</table>
+</body>
+</html>

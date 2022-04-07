@@ -1,0 +1,260 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+
+
+<script language="javascript">
+
+function spazi(msgtot,tempo)  {
+  var sp = " ";
+  for (var n=0; n <= (10+msgtot.length-tempo); n++)
+    sp += " ";
+  return(sp);
+}
+
+
+
+
+var msg2 = 
+"The Roland Maze Project                                                    ";
+ var pos2 = 0;
+msg3 = spazi(msg2,0) + msg2 + "         ";
+function ScrollStatus() {
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2);
+	pos2++;
+	if( pos2 > msg3.length ) pos2=0;
+	window.setTimeout("ScrollStatus()",100);
+}
+
+
+
+
+
+</script>
+
+<script language="JavaScript1.1">var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
+<title>The Roland Maze Project (concept of)</title>
+<base target="Right">
+</head>
+
+<body onLoad="ScrollStatus()" ; background="bline2.gif" >
+<div align="right">
+
+<table border="0" width="95%" height="49">
+  <tr>
+    <td>
+<div align="center">
+<center><table border="2" width="100%" height="49">
+      <tr>
+        <td width="63%" height="72">
+<p align="center"><font size=+5
+color="#000000"><strong>The Roland Maze Project</strong></font></td>      
+</tr>    
+
+<table border="2"  width="100%">   
+    <tr><td  valign="top">  <br>
+    <center><font size=+2><b>Concept of the project</b></font></center> <br>
+
+<center>
+ <OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+ WIDTH=599 HEIGHT=252>
+ <PARAM NAME=movie VALUE="filmy/film1.swf">
+<PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#FFFFFF>
+
+<EMBED src="filmy/film1.swf" quality=high bgcolor=#000000
+WIDTH=599 HEIGHT=252 TYPE="application/x-shockwave-flash"
+PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+</EMBED>
+
+
+
+
+
+
+
+
+</OBJECT>
+</center>
+          <br><br>
+
+<font size=+1> In the proposed experiment detection points would be placed in the 
+buildings
+ (or better on the roofs) 
+of Lodz high schools. Their net is dense enough (see Figure beside)
+ to enable observation of particles starting from energies of 10<sup>18</sup>eV,
+ for which expected frequency of interesting registrations is much greater
+ (several thousands times) than for cases from the narrow region above
+ 10<sup>20</sup>eV. So one can expect first interesting experimental results 
+already
+ in the preliminary stage of realisation of the project with a small number
+ of detection points. While the large experiments are dedicated exclusively 
+ to big science, in our project each station (school) would constitute 
+autonomous
+ air shower array. Small, but developed enough to provide results which 
+could
+ themselves serve as material to interesting studies related to cosmic ray 
+ physics and to independent developing of data analysis methods.<br>
+
+
+For available spacing between detectors in a station (of the order of 
+~10 m) 
+ the chance of observing highest energy showers in one separate station is 
+very small,
+ but a special trigger system may provide full efficiency of registration 
+of showers
+ with energies ~ 10<sup>15</sup>eV falling on the detection area 
+(100 m<sup>2</sup>).
+ For a specific realisation (discrimination levels) one can obtain sensible 
+ frequency of events counted in 1 min<sup>-1</sup>.<br>
+
+ To enable independent observations in a separate station (high school) 
+each 
+ of them should be equipped with 4 scintillation counters of area
+ ~ 1 m<sup>2</sup>.
+ The electronic system should enable measurement of relative times with 
+accuracy
+ of ~ 5 ns (that would give angular resolution of ~ 5<sup>o</sup>) and
+ measurement of 
+signal amplitudes from all the detectors.
+<br>
+The system of converters and
+master elaboration  would be connected to a PC-class computer, on which
+preliminary data analysis  and storing would be performed. The scheme of a
+single detection station is shown  in the figure.
+<br>
+ 
+To enable coordination of work of all the stations, which is the essence of 
+described
+ project, the GPS system seems at the moment the best for time 
+synchronization.
+ In the standard version GPS provides absolute time with sufficient 
+accuracy
+ (~300 ns) to synchronize events in different station. It seems
+reasonable  to increase accuracy to several nanoseconds 
+to enable additional
+determination of particle direction in cases of  simultaneous registrations 
+in
+several stations, that are expected for the highest  energy showers, 
+studies
+of which are the main scientific goal of this project.<br>
+
+ Communication between stations  
+would be realised via Internet (see the figure to the right).
+ Permanent connection to the net is not demanded, as the data stored in
+ computer memory can be only once per some time sent to the central server.
+ The server would put the data in some order, store and archivise them,
+ and make accessible for each group on demand.
+ In this way each group taking part in the realisation of the project would 
+be
+ able to independently analyse the whole gathered data and perform its own 
+original
+ studies.
+
+</td><td><center>
+<img src="lodz300.jpg" align="top"></center>
+<center><font size=+1>
+
+Map of high schools in the Lodz region.</center><br><br>
+<img src="szk4e.gif" align="top"></center>
+<center>
+The schematic view of the single Maze Project station.</center><br><br>
+<center>
+<img src="siecalle.gif" align="top"></center>
+<center>
+The idea of the Maze Project network.</center>
+</table>
+
+</table>
+<TABLE width="100%"><TR>
+    <TD align=right><A href="ang.htm" target="_top"><IMG
+      align=center border=0 height=22 src="up.gif"
+      width=22></A> </TD></TR></TABLE>
+
+
+
+
+ </td>
+  </tr>
+</table>
+
+<br>
+</div>
+</body>
+</html>

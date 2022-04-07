@@ -1,0 +1,195 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="keywords"
+content="promieniowanie kosmiczne">
+
+<script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
+
+var msg2 = 
+"Projekt im. Rolanda Maze                                                    ";
+
+   var pos2 = 0; 
+msg3 = spazi(msg2,0) + msg2 + "        "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",100); 
+} 
+ 
+ 
+ 
+ 
+ 
+</script> 
+
+<script language="JavaScript1.1">
+var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
+
+<title>Projekt im. Rolanda Maze</title>
+</head>
+
+<body bgcolor="#000000"> 
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Original:  Matthew Musgrove ( muskrat@lvnworth.com) -->
+<!-- Web Site:  http://free.prohosting.com/~musgrove -->
+
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin -->
+var no = 5;
+var speed = 10;
+var ns4up = (document.layers) ? 1 : 0;
+var ie4up = (document.all) ? 1 : 0;
+var s, x, y, sn, cs;
+var a, r, cx, cy;
+var i, doc_width = 800, doc_height = 600;
+if (ns4up) {
+doc_width = self.innerWidth;
+doc_height = self.innerHeight;
+}
+else
+if (ie4up) {
+doc_width = document.body.clientWidth;
+doc_height = document.body.clientHeight;
+}
+x = new Array();
+y = new Array();
+r = new Array();
+cx = new Array();
+cy = new Array();
+a = new Array();
+sn = new Array();
+cs = new Array();
+s = 8;
+for (i = 0; i < no; ++ i) {  
+initRain();
+if (ns4up) {
+if (i == 0) {
+document.write("<layer name=\"dot"+ i +"\" left=\"1\" ");
+document.write("top=\"1\" visibility=\"show\"><font color=\"yellow\">");
+document.write(".</font></layer>");
+}
+else {
+document.write("<layer name=\"dot"+ i +"\" left=\"1\" ");
+document.write("top=\"1\" visibility=\"show\"><font color=\"yellow\">");
+document.write(".</font></layer>");
+   }
+}
+else 
+if (ie4up) {
+if (i == 0) {
+document.write("<div id=\"dot"+ i +"\" style=\"POSITION: ");
+document.write("absolute; Z-INDEX: "+ i +"; VISIBILITY: ");
+document.write("visible; TOP: 15px; LEFT: 15px;\"><font color=\"yellow\">");
+document.write(",</font></div>");
+}
+else {
+document.write("<div id=\"dot"+ i +"\" style=\"POSITION: ");
+document.write("absolute; Z-INDEX: "+ i +"; VISIBILITY: ");
+document.write("visible; TOP: 15px; LEFT: 15px;\"><font color=\"yellow\">");
+document.write(",</font></div>");
+      }
+   }
+}
+function initRain() {
+a[i] = 5 * (0.2 - 0.4 * Math.random());
+r[i] = 1;
+sn[i] = Math.sin(a[i]);
+cs[i] = Math.cos(a[i]);
+cx[i] = Math.random() * doc_width + 1;
+cy[i] = Math.random() * doc_height + 1;
+x[i] = r[i] * sn[i] + cx[i];
+y[i] = cy[i];
+}
+function makeRain() {
+r[i] = 1;
+cx[i] = Math.random() * doc_width + 1;
+cy[i] = 1;
+x[i] = r[i] * sn[i] + cx[i];
+y[i] = r[i] * cs[i] + cy[i];
+}
+function updateRain() {
+r[i] += s;
+x[i] = r[i] * sn[i] + cx[i];
+y[i] = r[i] * cs[i] + cy[i];
+}
+function raindropNS() {
+for (i = 0; i < no; ++ i) {
+updateRain();
+if ((x[i] <= 1) || (x[i] >= (doc_width - 20)) || (y[i] >= (doc_height - 20))) {
+makeRain();
+doc_width = self.innerWidth;
+doc_height = self.innerHeight;
+}
+document.layers["dot"+i].top = y[i];
+document.layers["dot"+i].left = x[i];
+}
+setTimeout("raindropNS()", speed);
+}
+function raindropIE() {
+for (i = 0; i < no; ++ i) {
+updateRain();
+if ((x[i] <= 1) || (x[i] >= (doc_width - 20)) || (y[i] >= (doc_height - 20))) {
+makeRain();
+doc_width = document.body.clientWidth;
+doc_height = document.body.clientHeight;
+}
+document.all["dot"+i].style.pixelTop = y[i];
+document.all["dot"+i].style.pixelLeft = x[i];
+}
+setTimeout("raindropIE()", speed);
+}
+if (ns4up) {
+raindropNS();
+}
+else
+if (ie4up) {
+raindropIE();
+}
+//  End 
+</script>
+
+<!-- <body background="Bline2.GIF"> -->
+<body onLoad="ScrollStatus()" >
+<div align="center">
+<center>
+
+<table border="0" width="606" height="400">
+  <tr>
+    
+<td height="409" width="602" colspan="2">
+<a href="index0.htm"
+target="_self"><img     border="0" src="main2.gif" align="center"
+    alt="Projekt im. Rolanda Maze  " WIDTH="600"
+HEIGHT="400"></a></td>   </tr>
+
+</table>
+</center></div>
+</body>
+</html>

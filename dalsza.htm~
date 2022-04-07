@@ -1,0 +1,148 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
+
+var msg2 = "Projekt im. Rolanda Maze";
+
+   var pos2 = 0; 
+msg3 = spazi(msg2,0) + msg2 + " "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",100); 
+} 
+ 
+ 
+ 
+ 
+ 
+</script> 
+
+
+<script language="JavaScript1.1">
+var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
+
+
+
+<title>dalsze perspektywy</title>
+<base target="Right">
+</head>
+
+<body onLoad="ScrollStatus()" ; background="bline2.gif">
+<div align="right">
+
+<table border="0" width="95%" height="49">
+  <tr>
+    <td><div align="center"><center><table border="2" width="100%" height="49">
+      <tr>
+        <td width="63%" height="72"><p align="center"><font size=+5
+color="#000000"><strong>Horyzonty</strong></font>
+&nbsp &nbsp <img src="eartha.gif"
+        alt="ziemia" ></td>      
+</tr>       <tr>
+        <td width="63%" height="19"><strong><font size="6" color="#FF0000"><p align="center"></font><font
+        size=+1 color="#FF0000"> Co moze dziac sie dalej</font></strong></td>
+      </tr>     </table>     </center></div><table border="2" cellpadding="3"
+width="100%"> 
+         <td valign="top" width="50%">
+
+<font size=+1>
+
+
+W proponowanej wersji projektu Maze stacje detekcyjne rozmieszczone  
+bylyby w odleglosciach od okolo pol do dwoch 
+kilometrow. Wieksze oddalenie spowoduje, ze stacja w praktyce nigdy  
+(?) nie powinna zarejestrowac przypadku w realnej koincydencji z 
+innymi, a wiec moglaby realizowac tylko zadania samodzielne,  
+zawezajac znacznie sens calego zamierzenia. 
+ <br>
+Mozliwym jest jednak sformulowanie powaznego problemu badawczego  
+(z zakresu fizyki promieniowanie kosmicznego) i dla odleglych punktow 
+detekcyjnych. Calkiem niedawno w literaturze  
+fachowej
+<!-- \footnote{T. Wada {\it i in.}, 
+Nucl. Phys. B (Suppl.) {\bf 75A}, 330 (1999); O. Carrel i M. Martin, Phys. Lett. 
+B {\bf 325}, 221 (1993).} -->
+pojawily sie doniesienia o zauwazeniu jednoczesnej rejestracji  
+wielkich pekow atmosferycznych przez aparatury odlegle nawet o 
+setki kilometrow. <A HREF="geza.htm">Koncepcja wyjasnienia tego zjawiska</A>
+podana  zostala przez Gierasimowa i  
+Zacepina
+<!-- \footnote{N.M. Gerasimova i G.T. Zatsepin, Sov. Phys. JETP {\bf 11}, 
+899 (1960)} -->
+juz dawno temu,
+problem jednak wciaz nie jest rozwiazany do konca.
+<!-- i polega ona na przyjeciu, iz peki te 
+zainicjowane zostaly przez fragmenty jadra atomowego, ktore  
+rozfragmentowalo daleko poza granica Ziemskiej atmosfery i ktore 
+rozejsc sie zdarzyly na tak duza odleglosc. --> 
+</td><td><font size=+1> <!--
+<br>
+Obecnie trwaja badania majace na celu potwierdzenie lub obalenie  
+wczesniejszych doniesien. Jeden z takich eksperymentow  
+obejmuje swoim zasiegiem cala niemal Japonie. -->
+ 
+Jak z tego widac nie ma zadnych zasadniczych przeszkod, aby
+rozszerzyc 
+dzialanie projektu Maze poza granice Lodzi i organizowac 
+zakladanie sieci detekcyjnych (wystarczy kilka zainteresowanych  
+szkol w jednej miejscowosci) w duzych odleglosciach 
+i analizowanie zebranych przez nie danych pod odpowiednim katem. 
+<font color="#770000"> Kazda  wieksza miejscowosc moze z powodzeniem (w 
+zaleznosci od  srodkow i mozliwosci) przylaczyc sie do naszego projektu.   
+</font>
+<br>
+
+
+
+
+Granice naszego kraju nie sa oczywiscie granicami dla fizyki, a tym  
+bardziej fizyki promieniowania kosmicznego. Mozna spodziewac sie, 
+ze za kilka lat podobne projekty rusza tez w innych krajach.  
+Najpewniej najpierw w USA. Korzystajac z technologii WWW niewatpliwie bardzo 
+cenna bylaby wymiana informacji, koncepcji, wynikow 
+i osiagniec. Niewykluczone, ze globalna siec dla obserwacji  
+efektu Gierasimowej-Zacepina moglaby przyniesc calkiem  
+ciekawe wyniki fizyczne. 
+
+</font> </td>
+
+</td>
+    </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</div>
+<p align="center"><font size="2">Copyright © T.Wibig. All rights reserved.<br>
+
+E-mail:<a href="mailto:wibig@zpk.u.lodz.pl">wibig@zpk.u.lodz.pl</a><br>
+WWW: <a href="http://www.u.lodz.pl/~wibig">www.u.lodz.pl/~wibig</a><br>
+</font></p>
+
+</body>
+</html>
