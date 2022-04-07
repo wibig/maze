@@ -1,0 +1,239 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
+
+var msg2 = 
+"Projekt im. Rolanda Maze                                                    ";
+
+   var pos2 = 0; 
+msg3 = spazi(msg2,0) + msg2 + "         "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",100); 
+} 
+ 
+</script> 
+<script language="JavaScript1.1">
+var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
+<title>opinie, uwagi, pytania</title>
+<base target="Right">
+</head>
+
+<body onLoad="ScrollStatus()" ; background="bline2.gif">
+<div align="right">
+
+<table border="0" width="95%" height="49">
+  <tr>
+    <td><div align="center"><center><table border="2" width="100%" height="49">
+      <tr>
+        <td width="63%" height="72"><p align="center"><font size=+5
+color="#000000"><strong>Opinie, uwagi, pytania</strong></font></td>      
+</tr>     <!--  <tr>
+        <td width="63%" height="19"><strong><font size="6" color="#FF0000"><p align="center"></font><font
+        size=+1 color="#FF0000"> Jak projekt bedzie
+powstawal (w punktach)</font></strong></td>       </tr> -->    </table>
+    </center></div><table border="2" cellpadding="3" width="100%">
+     <tr>
+         <td valign="top">
+
+<font size=+2>
+<ul> <li> Jesli masz
+<ul><li>jakies pytania do nas, </li><li>opinie lub </li><li>uwagi, </ul>
+</li><li>jesli
+moglbys pomoc nam w jakikolwiek sposob, </li>
+<li>jesli poszukujesz wiecej
+informacji,</li> </ul>slowem, jesli chcialbys sie z nami skontaktowac zajrzyj
+na strone WWW <a href="http://www.u.lodz.pl/"> Zakladu
+Fizyki Promieniowania Kosmicznego IPJ w Lodzi </A> lub wyslij e-mail na
+adres <a href="mailto:wibig@zpk.u.lodz.pl">wibig@zpk.u.lodz.pl</a>.<br><br>
+<br></font>
+<font size=+1>
+Bardzo bedziemy wdzieczni za opinie (szczegolnie za te pozytywne, a bardzo
+szczegolnie za opinie entuzjastyczne), uwagi (ze szczegolnym uwzglednieniem
+uwag konstruktywnych) i pytania (nie bladzi, kto pyta, ale i ten, kto na
+pytania odpowiadac probuje), nie mowiac juz o pomocy (moralnej jak i
+kazdej innej) w realizacji naszego projektu. <br>Zadne pytanie nie pozostanie
+bez odpowiedzi!
+
+
+<!-- <font size=+3 color="#000000">Faza pierwsza</font><br>  W pierwszej
+fazie opracowany zostalby szczegolowy projekt samych  detektorow 
+<ul>
+<li> 
+wielkosc detektora, 
+ </li>
+<li>odprowadzanie swiatla, system swiatlowodowy, 
+ </li>
+<li> zbieranie swiatla (fotopowielacz/ fotodioda lawinowa), 
+ </li>
+<li> przedwzmacniacze, jak i ukladow elektroniki stacji, 
+ </li>
+<li> rejestracja roznic czasowych, 
+ </li>
+<li> przetwornik ADC, 
+ </li>
+<li> uklady przetwarzajace sygnal GPS, 
+ </li>
+<li> wyprowadzanie sygnalu i lacznosc z PC, 
+ </li>
+<li> ustalenie testow diagnostycznych, 
+</li></ul>
+
+oraz wybor odpowiedniego systemu GPS. 
+Przy opracowywaniu szczegolow istotna bylaby kwestia ceny 
+calosci. W chwili obecnej wydaje sie, ze nie powinna byc on 
+wieksza niz 1000$.
+ <br>
+Takze w fazie pierwszej opracowano by podstawowe oprogramowanie PC 
+stacji jako 
+ <ul><li>
+ biblioteka programow umozliwiajacych odczyt 
+kazdej z rejestrwanych wielkosci  
+z poziomu jezyka wysokiego 
+poziomu (najpewniej C++), 
+</li> 
+<li> zasady komunikacji w Internacie, 
+ </li>
+<li> oprogramowania centralnego serwera projektu. 
+ </li></ul> 
+Rownolegle przeprowadzono by serie wykladow w liceach 
+zaznamiajac uczniow (i nauczycieli) z problematyka 
+fizyki wysokich energii, astrofizyki i fizyki promieniowania 
+kosmicznego i wreszcie z zalozeniami i mozliwosciami 
+projeku Maze. 
+
+</td>
+         <td valign="top" width="305">
+<font size=+1>
+<br><br>W miare potrzeb i postepow prac przy 
+prototypie stacji i oprogramowaniu prowadzonoby zajecia 
+dla nauczycieli (i uczniow) omawiajace 
+szczegolowe rozwiazania. 
+ <br>
+Na tym etapie przegotowan powstalby tez zestaw materialow 
+(dokumentacji) dla uczniow i nauczycieli z mozliwoscia 
+opublikowania ich w sieci WWW. 
+ <br>
+Wydaje sie, ze faza ta moze potrwac (w zaleznosci 
+od mozliwosci i srodkow) okolo roku. 
+<br><br>
+<font size=+3 color="#000000">Faza druga</font><br>
+<font size=+1>
+
+W fazie drugiej zbudowane zostaloby 2--4 prototypowych stacji, 
+ktore uruchamiane bylyby sukcesywnie. Po roku (okolo) prac 
+(wliczajac w to niezbedne testy) 
+uklad taki powinien wystarczyc, aby wykazac 
+slusznosc realizowanej koncepcji, tj. pokazac fizyczne  
+rejestracje pekow bardzo wysokich energii, prawidlowosc 
+oraz stabilnosc pracy systemu jako calosci. 
+ <br><br>
+<font size=+3 color="#000000">Faza trzecia</font> <br>
+W nastepnej fazie montowane i uruchamiane bylyby kolejne stacje 
+w zainteresowanych placowkach. Jest mozliwym, by do 
+dzialajacego  
+juz i sprawdzonego systemu poza liceami wlaczalyby sie  
+takze gimnazja, jesli tylko nauczyciele (i uczniowie) wykaza 
+zainteresowanie projektem. 
+ <br><br>
+<font size=+3 color="#000000">
+<a HREF="dalsza.htm">Mozliwosci dalszej rozbudowy </A></font>
+
+</font>
+-->
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</div>
+<p align="center"><font size="2">Copyright © T.Wibig. All rights reserved.<br>
+
+E-mail:<a href="mailto:wibig@zpk.u.lodz.pl">wibig@zpk.u.lodz.pl</a><br>
+WWW: <a href="http://www.u.lodz.pl/~wibig">www.u.lodz.pl/~wibig</a><br>
+</font></p>
+
+</body>
+</html>

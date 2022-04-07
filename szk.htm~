@@ -2,12 +2,48 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
 
+var msg2 = "Projekt im. Rolanda Maze                                         ";
+
+   var pos2 = 0; 
+msg3 = spazi(msg2,0) + msg2 + "          "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",100); 
+} 
+ 
+</script> 
+<script language="JavaScript1.1">
+var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
 <title>uczestnicy projektu Maze</title>
 <base target="Right">
 </head>
 
-<body background="bline2.gif">
+<body  onLoad="ScrollStatus()" ; background="bline2.gif">
 <div align="right">
 
 <table border="0" width="95%" height="49">
@@ -46,7 +82,7 @@ jako chetne do udzialu w projekcie Maze:
 </li></ul>      
 <ul><li> XXIV LO
 </li></ul>      
-<ul><li> X LO
+<ul><li> Zespol Szkol Ogolnoksztalcacych nr 10
 </li></ul>      
 <ul><li> Zespol Szkol Lacznosci
 </li></ul>      
@@ -83,6 +119,8 @@ jako chetne do udzialu w projekcie Maze:
 <ul><li> Zespol Szkol Elektronicznych
 </li></ul>      
 <ul><li> IV LO
+</li></ul>      
+<ul><li> XX LO
 </li></ul>      
 przypominamy, ze czekamy na zgloszenia do 10 stycznia 2002,
 po ktorym to terminie zaczniemy przygotowywac liste uczestnikow naszego projektu

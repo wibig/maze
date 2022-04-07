@@ -1,3 +1,64 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <html>
 
 <head>
@@ -11,18 +72,63 @@ function spazi(msgtot,tempo)  {
   return(sp); 
 } 
 
-var msg2 = "Projekt im. Rolanda Maze";
+var msg2 = 
+"Projekt im. Rolanda Maze                                                    ";
 
-   var pos2 = 0; 
-msg3 = spazi(msg2,0) + msg2 + " "; 
+   var pos2 = -1; 
+msg3 = spazi(msg2,0) + msg2 + "        "; 
 function ScrollStatus() { 
 	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	if( pos2 < 0 ) newImage();
 	pos2++; 
 	if( pos2 > msg3.length ) pos2=0; 
-	window.setTimeout("ScrollStatus()",100); 
+	window.setTimeout("ScrollStatus()",100)
 } 
  
 </script> 
+<script LANGUAGE="JavaScript">
+
+        /* ####################### begins list of images to be used
+         ####################### */
+        currentIndx=0;
+        MyImages=new Array(6);
+        MyImages[0]='rm1.jpg';
+        MyImages[1]='rm2.jpg';
+        MyImages[2]='rm3m.jpg';
+        MyImages[3]='rm1m.jpg';
+        MyImages[4]='rm2m.jpg';
+        MyImages[5]='rm3.jpg';
+        /* ####################### now we preload the images ####################### */
+        imagesPreloaded = new Array(4)
+        for (var i = 0; i < 5 ; i++)
+        {
+                imagesPreloaded[i] = new Image(120,120)
+                imagesPreloaded[i].src=MyImages[i]
+        }
+        /* ####################### this function loads a random image ####################### */
+        function newImage() {
+        currentIndx=Math.round(Math.random()*4)
+        document.theImage.src=MyImages[currentIndx]
+        }
+
+</script>
+
+<script language="JavaScript1.1">
+var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
 <title>Roland Maze</title>
 <base target="Right">
 </head>
@@ -31,28 +137,30 @@ function ScrollStatus() {
 <div align="right">
 
 <table border="0" width="95%" height="49">
-  <tr>
+ 
     <td><div align="center"><center><table border="2" width="100%" height="49">
-      <tr>
+      
         <td width="63%" height="72"><p align="center"><font size=+7
 color="#000000"><strong>Roland Maze</strong></font></td>       </tr>
     </table>
     </center></div>
     <table border="2" cellpadding="3" width="100%">
       <tr>
-        <td valign="top" ><br><br>
+        <td valign="top" >
  <p align="center">
 <img
-              src="rm.gif" alt="Roland Maze"
+              src="bline2.gif" NAME="theImage" alt="Roland Maze" width=300
+height=400   
 >
+
 </p>
    <font size=+1>
 </td>
          <td valign="top">
-<font size=+2 color="#000000"> Roland Maze</font><font size=+1 color="#000000">
-byl wspolodkrywca  wielkich pekow atmosferycznych. Aparatura, jaka zbudowal  
-na dachu Ecole Normale Superieure w Paryzu pozwolila na
-zaobserwowanie  jednoczesnych rejestracji czastek wysokich
+<font size=+2 color="#000000"> <br>Roland Maze</font><font size=+1
+color="#000000"> byl wspolodkrywca  wielkich pekow atmosferycznych.
+Aparatura, jaka zbudowal   na dachu Ecole Normale Superieure w Paryzu
+pozwolila na zaobserwowanie  jednoczesnych rejestracji czastek wysokich
 energii przez dwa  odlegle (~30 m) detektory. Jego nazwisko
 widnialo obok nazwiska   Pierra Augera w naglowkach pierwszych
 prac z roku 1938 donoszacych  o odkryciu promieniowania o niewyobrazalnie wielkich 

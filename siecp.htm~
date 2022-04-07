@@ -135,6 +135,8 @@ var msg2 =
 msg3 = spazi(msg2,0) + msg2 + "                  "; 
 function ScrollStatus() { 
 	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	if( pos2 < 0 ) trap();
+	if( pos2 < 0 ) click();
 	pos2++; 
 	if( pos2 > msg3.length ) pos2=0; 
 	window.setTimeout("ScrollStatus()",100); 
@@ -142,6 +144,19 @@ function ScrollStatus() {
  
 </script> 
 
+<script LANGUAGE="JavaScript">
+function protect(e) {
+alert("Sorry, you don't have permission to right-click.");
+return false;
+}
+
+function trap() {
+if(document.images)
+for(i=0;i<document.images.length;i++)
+document.images[i].onmousedown = protect;
+}
+
+</script>
 <script language="JavaScript">
 
 var popup="Sorry, right-click is disabled.\n\nThis Site Copyright ©2000";
