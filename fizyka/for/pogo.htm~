@@ -1,0 +1,301 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
+
+var msg2 =    
+"Projekt im. Rolanda Maze                                                  ";
+
+   var pos2 = -1; 
+msg3 = spazi(msg2,0) + msg2 + "                  "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",100); 
+} 
+ 
+</script> 
+
+<script language="JavaScript">
+
+var popup="Sorry, right-click is disabled.\n\nThis Site Copyright ©2000";
+function noway(go) {
+if (document.all) {
+if (event.button == 2) {
+alert(popup);
+return false;
+}
+}
+if (document.layers) {
+if (go.which == 3) {
+alert(popup);
+return false;
+}
+}
+}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+}
+document.onmousedown=noway;
+</script>
+<script language="JavaScript1.1">
+var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
+
+<title>Promieniowanie kosmiczne a klimat</title>
+<base target="Right">
+</head>
+
+<body background="../../bline2.gif" onLoad="ScrollStatus()">
+
+<div align="right">
+
+<table border="0" width="95%" height="49">
+  <tr>
+    <td><div align="center">
+<center><table border="2" width="100%" height="49">
+      <tr>
+        <td width="90%" height="72">
+<p align="center"><font size=+5
+color="#000000"><strong>Promieniowanie kosmiczne a klimat na Ziemi</strong></font></td> 
+      </tr>    
+   <tr>
+        <td width="100%" height="19"><strong><font size="6" color="#FF0000">
+
+<p
+align="center"> </font><font
+        size=+1 color="#FF0000"> wahania strumienia promieniowania
+kosmicznego w dluzszych  okresach czasu</font> </strong></td>      
+</tr>     </table>    
+ </center>
+<!-- </div> -->
+<table border="2" cellpadding="3" width="100%">   
+   <tr> 
+      <td valign="top" width="90%">
+<font size =+1>
+
+<br>
+Zyjemy na Ziemi. Jest ona jedna z planet krazacych wokol Slonca (w odleglosci jednej jednostki astronomicznej AU).
+Caly Uklad Sloneczny (o rozmiarach powiedzmy 39 AU) zanurzony jest w bezkresnej (w pewnej, rzecz jasna, skali odleglosci)
+przestrzeni kosmicznej, z ktorej dochodzi do nas promieniowanie kosmiczne
+(oczywiscie poza ta jego czescia, jaka produkuje samo Slonce). 
+Oddziela nas od niej odszar (rozmiarow, powiedzmy 200 AU - zalezy, w ktora
+strone patrzec), w ktorym wplyw Slonca stopniowo maleje, az wreszcie zanika
+zupelnie. 
+<p align="center">
+
+<img src="ssn001.gif"
+        alt="heliosfera"><br><font size=+1> <br></p>
+
+
+Promieniowanie kosmiczne, aby dotrzec do granic ziemskiej atmosfery musi przedostac sie przez pola magnetyczne
+Slonca i Ziemi. W porownaniu z polami w przestrzeni miedzygwiezdnej sa one calkiem duze i czastki 
+kosmiczne, jako obdarzone ladunkiem elektrycznym odchylane sa w tych polach i
+to tym bardziej, im mniejsze maja energie. Jesli dodac do tego czastki wiatru
+slonecznego, czyli to, co produkuje najblizsza nam gwiazda, sytuacja  staje
+sie naprawde bardzo skomplikowana.  <br>
+Od czasu, gdy Slonce przestalo byc bogiem, nie ma powodow, aby przyjmowac, ze jest ono doskonale i 
+niezmienne w swej wielkosci. Wykrycie plam na Sloncu i ich obserwacje przyczynily sie do
+okrycia, ze gwiazda nasza z calkiem dobra dokladnoscia podlega okresowym zmainom i okres ten jest z grubsza rowny 11
+latom. Dzis wiadomo, ze w ciagu tych jedenastu lat dziwne i nie do konca zrozumiale rzeczy dzieja sie z polem
+magnetycznym Slonca. Co jedenascie lat zmienia sie jego kierunek, a kazdej takiej zmianie towarzyszy silna 
+aktywnosc na widocznej jego powierzchni objawiajaca sie (miedzy innymi) <A href="for.htm"> rozblyskami i wybuchami,
+wyrzucaniem w przestrzen strumieni materii</a>, co powoduje niemale <A href="for.htm">zaburzenia</a> w calym Ukladzie Slonecznym.  
+<bf>
+Poza tymi gwaltownymi zjawiskami badanie dlugookresowych zmian sytauacji w polach magnetycznych Ukladu Slonecznego
+takze okazuje sie byc  ciekawym i prowadzic moze do waznych (i
+praktycznych) wnioskow. <br>
+Okazuje sie, ze cykl 11 letni nie jest jedynym
+rodzajem zmiennosci. Jesli sprawdzic, jak liczba plam na Sloncu zmieniala sie
+w przeszlosci, okaze sie, ze byl taki czas, ze nie bylo ich prawie wcale. 
+
+<p align="center">
+
+<img src="ssn020.gif"
+        alt="Maunder minimum"><br><font size=+1> <br></p>
+
+
+Okres ten zwyklo sie nazywac "minimum Maundera".
+<bf>
+Powstaje istotne pytanie, czy liczba plam na Sloncu ma jakis wplyw na to, co dzieje sie na Ziemi. Pomijajac
+tu (z braku miejsca) wiele potencjalnie mozliwych, acz do konca niejasnych i z gruntu niefizycznych 
+efektow (natury np. historycznej, socjologicznej, czy polityczno-militarnej), skupmy sie najpierw na
+zwiazku liczby plam z intensywnoscia promieniowania kosmicznego. 
+<br>
+Promieniowanie kosmiczne wykryto dopiero 100 lat temu (niecale), a wiec mogloby wydawac sie, ze nie ma szans na 
+odpowiedz na pytanie, ile go bylo w okresie minimum Maundera. Okazuje sie, ze
+nie jest to prawda.<br> W atmosferze ziemskiej, obok innych (typowych)
+izotopow wegla wystepuje radioaktywny izotop C<sup><font size =-1>
+14</sup><font size=+1>. Jest on produkowany stale przez promieniowanie kosmiczne o niskich energiach w gornych
+warstwach atmosfery. Wegiel, ten radioaktywny takze, asymilowany jest w organizmach roslin i odklada sie w nich przez cale zycie,
+a wiec, przygladajac sie, ile jest radioaktywnego wegla w szczatkach
+organizmow z odleglych epok, mozemy z grubsza powiedziec, jaki strumien
+promieniowania kosmicznego docieral wtedy do Ziemi. Wyniki takich pomiarow
+pokazane sa na wykresie:  
+<p align="center">
+
+<img src="ssn003.gif"
+        alt="Maunder minimum"><br><font size=+1> <br></p>
+
+
+Na rysunku pokazano takze czas minimum Maundera i kilka innych faktow z historii.
+Okres minimum (liczby plam jak i zawartosci wegla
+C<sup><font size =-1>14</sup><font size=+1>) zbiega sie z tak zwana mala
+epoka lodowa znana z zapiskow historycznych. Poprzedzajaca minimum epoka
+duzej aktywnosci Slonca przypada za "cieple sredniowiecze". Wtedy to
+Wikingowie dotarli na Grenlandie i nazwali ja wlasnie  "Ziemia Zielona". Dzis
+chyba nikomu taka nazwa nie przyszla by do glowy! Jesli dodac do tego zapiski
+o krainie winorosli gdzies w Kanadzie (moze i na Labradorze), zbieznosc
+(korelacja) strumienia promieniowanie kosmicznego i sredniej temperatury na
+Ziemi wydaje sie calkiem realna. <bR> Aby powiedziec o tym cos wiecej, trzeba
+sie jednak odwolac do czasow, w ktorych dane, tak o aktywnosci Slonca, jak i o
+strumieniu promieniowania kosmicznego znane sa dokladniej.   
+
+<p align="center">
+
+<img src="ssn01.gif"
+        alt="Maunder minimum"><br><font size=+1> <br></p>
+
+Rysunek pokazuje zmiany strumienia powolnych neutronow produkowanych w atmosferze przez promieniowanie
+kosmiczne niskich energii mierzone przez jeden z najslynniejszych monitorow neutronowych: Climax w Kolorado (linia i skala zielona)
+Wczesniejsze dane o strumieniu promieniowania kosmicznego pochodza z komor jonizacyjnych. Komory takie mierza czastki
+o wyzszych energiach i wyniki otrzymane za ich pomoca pokazuje linia czerwona. Kolorem niebieskim pokazano, jak zmieniala sie
+w tym czasie srednia liczba plam slonecznych. Widac wyraznie, ze im wiecej plam, im aktywniejsze jest Slonce,
+tym mniej czastek dociera do nas z kosmosu.<br>
+Ale jak to moze wplywac na temperature na Ziemi?
+<br>
+Juz starozytnie Grecy (napewno) zastanawiali sie, skad biora sie chmury. Dzis wiemy, ze skladaja sie on glownie z
+wody w postaci malych kropelek (lub krysztalkow), jakie powstaly z zawartej w
+atmosferze pary wodnej. Aby para mogla sie skroplic  (lub zestalic), potrzebne
+sa dwie rzeczy: odpowiednio niska temperatura i tak zwane zarodzie
+kondensacji. O ile z tym pierwszym nie ma problemow, wystarczy wzniesc sie
+odpowiednio wysoko, z drugim moga byc klopoty. Wysoko w gorze nie zawsze jest
+dostatecznie duzo pylow i roznych "niejednorodnosci" w atmosferze. <br>Okazuje
+sie (na szczescie!), ze doskonalymi
+zarodkami dla skraplania sie pary moga byc zjonizowane atomy powietrza. Jony
+powstaja przede wszystkim, gdy z jakiegos neutralnego atomu, czy czasteczki
+chemicznej z uzyciem brutalnej sily wybije sie chocby jeden elektron. A skad
+wziac wysoko w atmosferze brutalna sile? <br> Odpowiedz jest zupelnie prosta:
+dostarczyc jej moga czastki promieniowania kosmicznego. Moga one z latwoscia i
+duzej liczbie jonizowac powietrze i robia to przez caly czas. Spodziewac by
+sie mozna, ze im tego promieniowania wiecej, tym latwiej beda tworzyc sie nad
+nami chmury.<br> Gdyby mechanizm taki w rzeczywistosci pracowal, wyjasnial by
+on natychmiast pochodzenie malej epoki lodowej i nazwe Grenlandii. Im wiecej
+promieniowania, tym wiecej chmur nad ziemia, a chmury zmniejszaja ilosc
+wyslanego z ziemi w niebo ciepla (o czym najlepiej przekonac sie w bezchmurne
+zimowe noce), a wiec tym cieplej, srednio rzecz biorac oczywiscie. <bf> 
+
+ <p
+align="center"> <img src="ss02.gif"         alt="Maunder minimum"><br><font
+size=+1> <br></p> 
+ Na rysunku powyzej porownano stopien zachmurzenia nieba (w
+skali globalnej) zestawiajac dane z czterech satelitow Nimbus-7,  DSMP,
+ISCCP-C2, ISCCP-D2 (punkty na wykresie) i strumien neutronow stacji Climax
+(linia czerwona). Dodatkowo pokazano takze  linia niebieska i przerywana
+ilosc promieniowania radiowego (na fali o dlugosci 10.7 cm) docierajacego do
+nas ze Slonca. Gdyby ktos nieuwaznie popatrzyl na ten rysunek, moglby
+powiedziec, ze za temperature (klimat) na Ziemi bardziej odpowiada
+promieniowanie kosmiczne, niz promieniowanie Slonca. Oczywiscie nie jest to
+prawda, ale z drugiej strony wplywu promieniowania kosmicznego na temperature
+na Ziemi nie nalezy rowniez pomijac.   </font>        </tr>     </table>
+  
+ </tr>
+</table>
+</div>
+<p align="center"><font size="2">
+Copyright © T.Wibig. All rights reserved.<br>
+
+E-mail:<a href="mailto:wibig@zpk.u.lodz.pl">
+wibig@zpk.u.lodz.pl</a><br>
+WWW: <a href="http://www.u.lodz.pl/~wibig">www.u.lodz.pl/~wibig
+</a><br>
+</font></p>
+
+</body>
+</html>

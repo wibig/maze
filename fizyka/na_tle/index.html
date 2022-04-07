@@ -1,0 +1,271 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
+
+var msg2 = 
+"Projekt im. Rolanda Maze                                                    ";
+
+   var pos2 = 0; 
+msg3 = spazi(msg2,0) + msg2 + "          "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",100); 
+} 
+ 
+</script> 
+<script language="JavaScript">
+
+var popup="Sorry, right-click is disabled.\n\nThis Site Copyright ©2000";
+function noway(go) {
+if (document.all) {
+if (event.button == 2) {
+alert(popup);
+return false;
+}
+}
+if (document.layers) {
+if (go.which == 3) {
+alert(popup);
+return false;
+}
+}
+}
+if (document.layers) {
+document.captureEvents(Event.MOUSEDOWN);
+}
+document.onmousedown=noway;
+</script>
+<script language="JavaScript1.1">
+var debug = true;
+function right(e) 
+{
+if (navigator.appName == 'Netscape' && (e.which == 3 || e.which == 2)) return false;
+else if (navigator.appName == 'Microsoft Internet Explorer' && (event.button == 2 || event.button == 3)) {
+alert('This Page is fully protected!');
+return false;
+}
+
+return true;
+}
+document.onmousedown=right;
+if (document.layers) window.captureEvents(Event.MOUSEDOWN);
+window.onmousedown=right;
+</script>
+<title>fizyka  projektu Maze</title>
+<base target="Right">
+</head>
+
+<body  onLoad="ScrollStatus()" ; background="../../bline2.gif">
+
+<div align="right">
+
+<table border="0" width="95%" height="49">
+  <tr>
+    <td><div align="center">
+<center><table border="2" width="100%" height="49">
+      <tr>
+        <td width="63%" height="72">
+<p align="center"><font size=+5
+color="#000000"><strong>my na tle</strong></font></td>      
+</tr>    
+   <tr>
+        <td width="63%" height="19"><strong><font size="6" color="#FF0000"><p align="center">
+</font><font
+        size=+1 color="#FF0000">Porownanie z innymi eksperymentami</font>
+</strong></td>       </tr>    
+ <!-- <table border="2" cellpadding="3" width="100%">   
+  -->
+  <tr>
+
+        <td valign="top">
+<br>
+<div align="center">
+<table border="0" cellpadding="0">
+<td valign="top">
+<align="right">
+<img src="maze.jpg" 
+        alt="my" >
+<br>
+<img src="syd.jpg" 
+        alt="Sydney" >
+<br>
+
+<img src="vr.jpg" 
+        alt="Volcano Ranch" >
+<br>
+</td><td valign="top"> 
+<img src="aga.jpg" 
+        alt="AGASA" >
+<br>
+<img src="ya.jpg" 
+        alt="Yakutsk" >
+<br>
+<img src="hp.jpg" 
+        alt="Haverah Park">
+<br>
+</td> 
+</tr>
+</table>
+</div>         
+ <!--
+ </p> </td>
+      <td valign="top">
+-->
+
+<table border="0" width="95%" align="center"><tr>
+      <td valign="top">
+
+<font size=+1><br>
+Tak wygladaja rozne eksperymenty, jesli porownywac po prostu ich rozmiary.
+Oczywiscie roznia sie one poza tym jeszcze tym co kryje sie pod narysowanymi 
+wyzej kolkami. W naszym eksperymencie kazde kolko to cztery jednometrowe
+detektory skladowej elektromagnetycznej wielkiego peku.<p>
+W eksperymencie AGASA kazde kolko to jeden detektor o powierzchi 2.2
+m<font size=+0><sup>2</sup></font> i dodatkowo w niektorych punktach sa
+jeszcze specjalne detektory do pomiaru skladowej mionowej.<p>
+W eksperymencie Haverah Park cztery z detektorow maja powierzchnie 34 
+m<font size=+0><sup>2</sup></font>, 24 - 13.5 
+m<font size=+0><sup>2</sup></font>, trzy 2.25 
+m<font size=+0><sup>2</sup></font>, inne trzy 9 
+m<font size=+0><sup>2</sup></font> i dodatkowo w samym srodku (w obszarze
+zaznaczonym ciemna linia na rysunku znajduje sie 30 detektorow jednomertowych.
+W eksperymencie tym jest tez kilka detektorow do pomiaru mionow w wielkich
+pekach.<p>
+W eksperymencie SUGAR (Sydney University Giant Shower Recorder),
+ w 54 punktach
+detekcyjnych sa po dwa liczniki scyntylacyjne (rozsuniete o 50 m) o
+powierzchniach 6  m<font size=+0><sup>2</sup></font> zakopane pod ziemia. W
+ten chytry sposob uniemozliwiono skladowej elektromagnetycznej (elektronom,
+pozytonom i fotonom o niespecjalnie wielkich energiach) dotarcie do licznikow
+i cala aparatura SUGAR mierzy glownie skladowa mionowa pekow. Ma to swoje
+plusy i minusy. <p>  
+W eksperymencie jakuckim w punktach polozonych daleko od srodka aparatury
+umieszczono po dwa dwumetrowe detektory scyntylacyjne, troche blizej po jednym
+a zupelnie blisko liczniki maja powierzchnie 0.25
+m<font size=+0><sup>2</sup></font>. W aparaturze tej sa jeszcze oczywiscie
+detektory do pomiaru skladowej mionowej i wiele innych (jak chocby monitor
+neutronowy, czy anteny do wylapywania sygnalow radiowych od czastek peku).
+<p>
+Eksperyment Volcano Ranch, ktory rozpoczal prace jeszcze w koncu lat
+piecdziesiatych (ubieglego wieku!) skladal sie z dwudziestu detektorow
+scyntylacyjnych o powierzchniach 3.26 
+m<font size=+0><sup>2</sup></font>.<br>
+
+
+
+    </font>
+</td></tr></table>
+
+
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</div>
+<p align="center"><font size="2">Copyright © T.Wibig. All rights reserved.<br>
+
+E-mail:<a href="mailto:wibig@zpk.u.lodz.pl">wibig@zpk.u.lodz.pl</a><br>
+WWW: <a href="http://www.u.lodz.pl/~wibig"
+target="_top">www.u.lodz.pl/~wibig</a><br> </font></p>
+
+</body>
+</html>
