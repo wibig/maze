@@ -1,0 +1,399 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Physics 491 project</title>
+<!-- Date: Friday, December 6, 1996  8:04 PM -->
+
+<style TYPE="text/css"> 
+<!-- 
+
+BODY    {background-color: FFFFFF}
+
+A:link  {text-decoration: none; color: FF0000}
+
+A:visited       {text-decoration: none; color: 006699}
+
+A:active        {text-decoration: none; color: FFFF00}
+
+P       {font-family: Verdana, Arial, sans-serif; 
+		font-size: 10pt;
+		color: 000000;
+		line-height: 12pt}
+
+H1      {font-family: Verdana, Arial, sans-serif; 
+		font-size: 16pt; 
+		color: 993300}
+
+H2      {font-family: Verdana, Arial, sans-serif; 
+		font-size: 14pt; 
+		color: 000000}
+		
+H3      {font-family: Verdana, Arial, sans-serif; 
+		font-size: 10pt; 
+		color: 000000}		
+		
+BLOCKQUOTE	{font-family: Verdana, Arial, sans-serif; 
+		font-size: 10pt;
+		color: 000000;
+		line-height: 12pt}
+		
+UL		{font-family: Verdana, Arial, sans-serif; 
+		font-size: 10pt;
+		color: 000000;
+		line-height: 12pt}
+		
+LI		{font-family: Verdana, Arial, sans-serif; 
+		font-size: 10pt;
+		color: 000000;
+		line-height: 12pt}	
+--> 
+</style>
+
+
+
+<meta name="Microsoft Theme" content="blends 111, default">
+<meta name="Microsoft Border" content="b, default">
+</head>
+
+<body background="../../../_themes/blends/blegtext.gif" bgcolor="#FFFFFF" text="#000000" link="#993300" vlink="#0000FF" alink="#FF9900"><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><!--msnavigation--><td valign="top"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+
+
+<h1 ALIGN="CENTER"><!--mstheme--><font color="#0000FF">Building an eye to see the sky: Developing GPS time synchronization for the <i>A</i>lberta <i>L</i>arge Area <i>T</i>ime Coincidence <i>A</i>rray (ALTA)<!--mstheme--></font></h1>
+
+<h3 ALIGN="CENTER"><!--mstheme--><font color="#0000FF">(A Physics 491 project)<!--mstheme--></font></h3>
+<img SRC="../../../images/Technical_Publications/Resources_Images/line.gif" ALIGN="TOP" ALT="line.gif" width="559" height="14">
+<h2><!--mstheme--><font color="#0000FF">Introduction<!--mstheme--></font></h2>
+
+<blockquote>
+The ALTA project, led by several professors of physics in the <a HREF="http://csr.phys.ualberta.ca/">Center 
+for Subatomic Research</a> here at the <a HREF="http://www.ualberta.ca/">University of 
+Alberta</a>, is a unique collaboration involving over twenty secondary schools throughout Alberta. The aim of 
+the project is to build an array of cosmic ray detectors, basically an enormous eye, that will be able to 
+detect a cluster of cosmic ray showers hitting the earth's surface over a large area. The ALTA array will also 
+be able to see a much rarer kind of event, a single shower so large that it will overlap several of the array's 
+detectors. Such a large area shower is caused by a single ultra-high energy particle (10^20 eV) slamming into 
+an air molecule in the upper atmosphere and creating a tremendous shower of debris. Man-made accelerators 
+cannot come even close to creating particles of such high energy and their true origin in space is still a 
+mystery waiting to be answered.<p>
+</blockquote>
+<a NAME="p491.html"></a>
+
+<h2><!--mstheme--><font color="#0000FF">Contents of this web page:<!--mstheme--></font></h2>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<!--msthemelist--><tr><td valign="baseline" width="42"><img src="../../../_themes/blends/blebul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><a HREF="#background">Background: Cosmic Rays and the ALTA detector array</a>
+<!--msthemelist--><tr><td valign="baseline" width="42"><img src="../../../_themes/blends/blebul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><a HREF="#finding_source">Finding the source of cosmic rays with the ALTA array: the need for time-synchronized detectors.</a>
+<!--msthemelist--><tr><td valign="baseline" width="42"><img src="../../../_themes/blends/blebul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><a HREF="#GPS_sync">ALTA: a province of GPS-synchronized clocks?</a>
+<!--msthemelist--><tr><td valign="baseline" width="42"><img src="../../../_themes/blends/blebul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><a HREF="#selective_availability">The Implications Of Selective Availability</a>
+<!--msthemelist--><tr><td valign="baseline" width="42"><img src="../../../_themes/blends/blebul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><a HREF="#ALTA_site">A closer look at an ALTA detector site</a>
+<!--msthemelist--><tr><td valign="baseline" width="42"><img src="../../../_themes/blends/blebul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><a HREF="#GPS_time_tag">Pinpointing an event's time with a GPS clock</a>
+<!--msthemelist--><tr><td valign="baseline" width="42"><img src="../../../_themes/blends/blebul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><a HREF="#previous_results">Testing the accuracy of GPS timing: previous results</a>
+<!--msthemelist--><tr><td valign="baseline" width="42"><img src="../../../_themes/blends/blebul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><a HREF="#Co-60_setup">Testing GPS timing with a mock detector array</a>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<!--msthemelist--><tr><td valign="baseline" width="42"><img src="../../../_themes/blends/blebul2a.gif" width="12" height="12" hspace="15"></td><td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><a HREF="#set-up_characteristics">Characteristics of random coincidences from the Cobalt-60 setup</a>
+<!--msthemelist--><tr><td valign="baseline" width="42"><img src="../../../_themes/blends/blebul2a.gif" width="12" height="12" hspace="15"></td><td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><a HREF="#GPS_tag_testing">Testing the GPS time-tag systems</a>
+<!--msthemelist--></table><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+<!--msthemelist--><tr><td valign="baseline" width="42"><img src="../../../_themes/blends/blebul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><a HREF="#conclusions">Conclusions, Acknowledgments, References</a>
+<!--msthemelist--></table><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+
+<h2><!--mstheme--><font color="#0000FF">Some Web Connections:<!--mstheme--></font></h2>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+<!--msthemelist--><tr><td valign="baseline" width="42"><img src="../../../_themes/blends/blebul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">The homepage of this page's <a HREF="http://tellus.phys.ualberta.ca/alta/papers/pap/home/homeofpaul.html">author</a>
+<!--msthemelist--><tr><td valign="baseline" width="42"><img src="../../../_themes/blends/blebul1a.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><a HREF="http://www.phys.ualberta.ca/~mcdonald/p491_homepage.html">Physics 491 Homepage</a>
+<!--msthemelist--></table><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><p>
+
+<p><!--msthemeseparator--><p align="center"><img src="../../../_themes/blends/blesepa.gif" width="600" height="10"></p>
+
+<a NAME="background"></a>
+<h2><!--mstheme--><font color="#0000FF">Background: Cosmic Rays and the ALTA detector array<!--mstheme--></font></h2><p>
+<blockquote>
+	Even though we might not normally be aware of them, cosmic rays are a part of every day life. Around one or so pass through an area the size of a person's hand every second (which does not even compare to the huge number of neutrinos coming from the fusion core of the sun.)<p>
+
+	It is known from experiments that the flux of cosmic rays hitting the earth is more or less isotropic. We also have a fairly good idea of the origin of the majority of cosmic rays which have an average energy of about 10^6 eV. It was Fermi who proposed that magnetic field activity within our own galaxy, for example near supernovae, could accelerate particles to high energies. Reflecting the overall make-up of our universe, these charged particles or so-called primary cosmic rays are mostly hydrogen nuclei (protons) but they also include some larger nuclei stripped of their electrons such as alpha particles and iron. They  continually bombard the earth from all directions and when one strikes an air molecule in the upper atmosphere, a cascade of secondary collisions produces a cone-shaped shower of secondary cosmic rays, including Cerenkov light, electrons and muons. It is the electrons and muons for the most part which we detect here on the ground.<p>
+
+	Several experiments in the past have already studied individual cosmic ray showers. The ALTA project, however, will use an array of detectors to search for time correlations between multiple cosmic ray showers striking the earth's surface over an area larger than ten thousand kilometers square ( 100 km x 100 km ).<p>
+
+	The individual ALTA detectors placed at secondary schools around the province of Alberta will be spaced apart by at least ten kilometers ( the upper size limit for typical cosmic showers)  so that correlated events at two neighbouring detectors will be due not to a small local shower but instead to either two separate showers from a cluster or to one large area shower created by a very high energy particle. One can imagine clusters of showers being formed by a wavefront of primary cosmic rays hitting the upper atmosphere and generating several showers at once. Perhaps, this wavefront of primaries is nothing less than the debris left over from a collision between a piece of interstellar dust and a high energy cosmic ray on its way here.(See figure 1)<p>
+</blockquote>
+
+<p ALIGN="CENTER">Figure 1 : A cluster of cosmic ray showers striking the ALTA array.</p>
+
+<p ALIGN="CENTER"><img SRC="../../../images/Technical_Publications/Resources_Images/cosmic8.gif" BORDER="0" ALT="cosmic rays" width="472" height="416"><p>
+
+<blockquote>
+	To summarize, whether through the direct detection of a single large shower or indirectly through the detection of a group of smaller ones, the ALTA array will be revealing information about the highest energy cosmic rays which unlike their lower energy counterparts have an uncertain origin probably outside of our galaxy.<p>
+</blockquote>
+<img SRC="../../../images/Technical_Publications/Resources_Images/back.gif" width="40" height="35" BORDER="1" ALT="back"> <a HREF="#p491.html">Return to Contents</a><p>
+
+<!--msthemeseparator--><p align="center"><img src="../../../_themes/blends/blesepa.gif" width="600" height="10"></p><p>
+
+<a NAME="finding_source"></a><h2><!--mstheme--><font color="#0000FF">Finding the source of cosmic rays with the ALTA array: the need for synchronized detectors.<!--mstheme--></font></h2><p>
+<blockquote>
+
+	One of the most valuable pieces of information which the ALTA project will be able to provide about shower clusters it sees is the direction in space from which the original wavefront of primaries responsible for the showers came. The direction is found by comparing the arrival times of several of a cluster's showers triggering different detectors over the ALTA array area.(See figure 2)<p>
+</blockquote>
+<p ALIGN="CENTER">Figure 2 : Determining the arrival direction of cosmic rays striking two neighbouring detectors.<p>
+
+<p ALIGN="CENTER"><img SRC="../../../images/Technical_Publications/Resources_Images/direction.gif" ALT="Direction" width="448" height="257"></p>
+
+<blockquote>
+	Because cosmic rays travel at near to the speed of light, the time differences between related events at two different detectors in the array will be very short, even down into the tens of nanoseconds. As a result, the ALTA project must have a reliable and accurate method of synchronizing all its detectors together in time. Only then can time differences between events at different parts of the array be meaningfully used to reconstruct the direction from which cosmic rays are arriving. Without synchronization the ALTA array is telescope completely out of focus.<p>
+
+
+	An idea of the level of synchronization required in the project can be obtained from the simple 2-D model of figure 2. The maximum clock jitter between 2 neighbouring detectors depends on how far apart they are and how accurate a value is required in the end for the arrival direction of the cosmic rays. Specifically:<p>
+
+
+		<p ALIGN="CENTER">RMS error in time (ns) ~ 30 [ L in km ] [ d(theta) in degrees]</p>
+
+where L is the detector separation and d(theta) is the allowed error in the angle of direction.<p>
+
+
+	For d(theta) ~ 1 degree and a baseline L of ~10 km, the maximum tolerable time jitter is about 300 ns. Because there will be other errors which are irreducible, the ALTA project is aiming to have all its detector clocks matched to within ~ 50 ns.<p>
+
+</blockquote>
+<img SRC="../../../images/Technical_Publications/Resources_Images/back.gif" width="40" height="35" BORDER="1" ALT="back"> <a HREF="#p491.html">Return to Contents</a><p>
+<!--msthemeseparator--><p align="center"><img src="../../../_themes/blends/blesepa.gif" width="600" height="10"></p><p>
+
+<a NAME="GPS_sync"></a><h2><!--mstheme--><font color="#0000FF">ALTA: a province of GPS-synchronized clocks?<!--mstheme--></font></h2><p>
+<blockquote>
+
+	Synchronizing the clocks of ALTA's detectors reliably to within 50 ns or so is a difficult task requiring special techniques, especially when low cost is an issue. An elegant, relatively inexpensive and very accurate method of time synchronization (what more could you want?) is to use the Global Positioning System (GPS) with a GPS receiver at each detector site.<p>
+
+
+	The Global Positioning System relies on 17 satellites ( plus 3 spare) which carry highly accurate, stable atomic clocks onboard. Ground stations around the world carefully monitor each satellite's clock and position and then regularly transmit up orbit information ( ephemeris ) and time corrections. In this way, all satellite clocks are kept closely synchronized.<p>
+
+
+	On the ground, a GPS user needs an antenna and a receiver to pick up radio signals from the satellites. A GPS receiver must lock on to at least four satellites to fix its 3-D position ( latitude, longitude, height ) and the time. If, however, the receiver's 3-d position is already accurately known, the signal from only one satellite is required to tell precise time. This is possible because the satellite regularly transmits down its whereabouts ( ephemeris as mentioned above ), which allows a receiver to know the distance `d' separating it from the orbiter at any instant. Thus, if the satellite emits a signal at time `t,' the receiver need only add on the radio travel time d/c (`c' the speed of light) to synchronize its clock with that of the satellite.<p>
+
+
+	 All the ALTA detectors, each correcting for a slightly different signal travel time from one satellite in common view, could with this method synchronize themselves to the same time standard, in this case 20, 000 kilometers away! ( See figure 3)<p>
+
+</blockquote>
+<p ALIGN="CENTER">Figure 3:  Common view technique of time synchronization.<p>
+
+<p ALIGN="CENTER"><img SRC="../../../images/Technical_Publications/Resources_Images/cview3.gif" ALT="view" width="480" height="302"><p>
+<blockquote>
+
+	The value of the GPS system in general for keeping time is that users can benefit from the accuracy of atomic clocks without footing their high cost. Within a GPS receiver, a cheap, compact  10 MHz quartz oscillator provides an internal clock of sufficient accuracy to keep the receiver roughly on time. What the whole satellite system does is to provide the corrections necessary to steer the receiver time within nanoseconds of the GPS standard.<p>
+
+
+	The common view technique of synchronizing several sites in the ALTA array to one satellite has the particular benefit of referencing all times to the same physical clock in orbit. Were different detectors to take their time coordinate from different satellites, errors in synchronization might be possible due to offsets between satellite clocks. The common view technique has a further significant advantage over other methods of GPS timing because of what is known as Selective Availability (SA), discussed in the next section.<p>
+</blockquote>
+
+<img SRC="../../../images/Technical_Publications/Resources_Images/back.gif" width="40" height="35" BORDER="1" ALT="back"> <a HREF="#p491.html">Return to Contents</a><p>
+<!--msthemeseparator--><p align="center"><img src="../../../_themes/blends/blesepa.gif" width="600" height="10"></p><p>
+
+<a NAME="selective_availability"></a><h2><!--mstheme--><font color="#0000FF">The Implications Of Selective Availability<!--mstheme--></font></h2><p>
+<blockquote>
+
+	While, on the one hand, the US ground control steers the onboard satellite clocks  to ensure that they remain very close to time standards on the ground, it also deliberately dithers the GPS clock signals for security reasons in a process called Selective Availability. This is meant to reduce the position and timing accuracy  available to unauthorized (civilian) GPS users. The fluctuations in the time signal at a receiver have a maximum amplitude of ~300 ns but what is of fundamental importance, as a group from Leeds points out in a recent paper, is that the maximum offset from true GPS time which is acquired over a one second period is only about one nanosecond. Therefore, the times of two events recorded by a GPS-based ALTA array within a one second period ( definitely an upper limit for correlated events) would be expected to be out by one nanosecond as a result of SA! This level of error is negligible compared to that from other sources of error such as detector response time at each site.<p>
+
+
+	Although the common view technique seems to be ideal for the ALTA project, a few notes of caution should be added. First, there will be synchronization errors due to the simple fact that a satellite signal traveling to two different detectors in the ALTA array will travel along different paths and feel different effects. This is not to say that such effects, for example ionospheric delay, cannot be corrected for. A second important point about common view is that the accuracy with which a receiver on the ground can determine time from one satellite depends on how accurately the receiver position has been set. If its 3-D position is incorrect, the 1 pulse per second (PPS) which it generates can have large fluctuations.<p>
+
+
+	For the timing accuracy required in the ALTA project, the GPS antenna position at each detector should be known to within about 10 m. To overcome the jitter in instantaneous GPS position readings as a result of SA, an average of many readings over a few days must be made to obtain 10 m accuracy. Once the ALTA array has been set up, each detector site will have to perform this averaging operation before fixing its position and switching into timing mode.<p>
+ 
+
+	The simplicity and elegance of time synchronization via GPS is appealing but what is its accuracy in practice?<p>
+
+
+	(There is a fair bit of information about the GPS on the web including an excellent <a HREF="http://www.utexas.edu/depts/grg/gcraft/notes/gps/gps.html">introduction</a> from the University of Texas and a list of <a HREF="http://www.inmet.com/~pwt/gps_gen.htm">GPS web resources</a>.)<p>
+</blockquote>
+
+<img SRC="../../../images/Technical_Publications/Resources_Images/back.gif" width="40" height="35" BORDER="1" ALT="back"> <a HREF="#p491.html">Return to Contents</a><p>	
+<!--msthemeseparator--><p align="center"><img src="../../../_themes/blends/blesepa.gif" width="600" height="10"></p><p>
+
+<a NAME="ALTA_site"></a><h2><!--mstheme--><font color="#0000FF">A closer look at an ALTA detector site<!--mstheme--></font></h2><p>
+<blockquote>
+
+	While some of the details may change, the basic design of an ALTA detector site will look more or less as follows. The site  will form its own local array composed of three detectors arranged on the vertices of an equilateral triangle 10 m or more on its side. A  GPS antenna and receiver will be located nearby, say at the centre of the configuration. Co-axial cables will link the detectors and GPS unit to the electronics and control computer indoors.<p>
+
+
+	This design incorporating a local array will serve two purposes. First, connected in coincidence the triplet of detectors will filter out a large number of background cosmic ray events not associated with a coherent shower. Only when an incoming shower triggers all three detectors will an event be recorded for future comparison with the data from the other ALTA sites. Second, just as for the overall ALTA array, a comparison of hit times at each of the three nodes on site will provide a local shower direction. For a cluster, the local shower directions determined at different locations should be roughly similar.<p>
+
+
+	Looking in more detail, the three nodes will in fact consist of a total of six sheet-like scintillation counters, two per node, the one lying perhaps a foot on top of the other. Each pair of counters will be connected in coincidence so that an event coming from a node will be taken to mean that a cosmic ray particle passed through both scintillation counters. This is an effective method of eliminating random noise from each counter and a way of lowering count rates to levels manageable by the site computer.<p>
+
+
+	The actual counters have two basic components, a sheet of scintillating plastic doped with organic molecules and an attached photomultiplier tube (PMT). When a cosmic ray passes through the plastic it may strike one of the organic molecules and excite it. On de-excitation, the molecule emits some number of photons which are detected by the PMT. Today's PMTs are sensitive enough to detect one photon because on striking the tube's photosensitive cathode the one photon produces one electron which is then multiplied by several factors of ten in a cascade effect. The end result from the single photon is a pulse of electrons, a current pulse, large enough to detect with electronics. The value of scintillation detectors is their short response time rated in the nanoseconds, an essential detector feature for the precise time resolution required by the ALTA project.<p>
+</blockquote>
+
+<img SRC="../../../images/Technical_Publications/Resources_Images/back.gif" width="40" height="35" BORDER="1" ALT="back"> <a HREF="#p491.html">Return to Contents</a><p>
+<!--msthemeseparator--><p align="center"><img src="../../../_themes/blends/blesepa.gif" width="600" height="10"></p><p>
+
+<a NAME="GPS_time_tag"></a><h2><!--mstheme--><font color="#0000FF">Pinpointing an event's time with a GPS clock<!--mstheme--></font></h2>
+<blockquote>
+
+	Each node at a particular detector site will have a system for time-tagging the cosmic ray events it sees. The coincidence rate from the node's two scintillation counters will be no more than a few counts per second depending on the size of scintillation sheets used. The time-tagging system that will handle these coincidences will consist of two parts, a GPS unit shared between all the nodes and a specially designed time-tag circuit board directly installed in the site computer. At present, a board developed by a Leeds group is being used but the ones eventually installed in the ALTA array will likely be custom made.(See figure 4)<p>
+</blockquote>
+
+<p ALIGN="CENTER">Figure 4: Schematic of the Leeds event time-tagging system using the GPS.<p>
+
+<p ALIGN="CENTER"><img SRC="../../../images/Technical_Publications/Resources_Images/ttag.gif" BORDER="0" ALT="tag" width="512" height="452"><p>
+<blockquote>
+
+	A sketch of how the system will operate is as follows. The GPS receiver in timing mode will act in effect as an accurate clock outputting a 1 PPS signal synchronized with GPS time. In order to determine the time of a detected event, a node's tagging system will act as a fast stopwatch, counting the time between the event and  the next `tick' on the GPS clock. The stopwatch is contained in the time-tag board, the heart of which is an oven-controlled 100 MHz oscillator, stable over several seconds, along with a scaler to count the oscillator cycles. The oscillator has the finest time precision of the whole system, which therefore cannot resolve times to better than half a 100 MHz cycle ( +/- 5 ns).<p>
+
+
+	As a final note, the Leeds board has the capacity to store up to 2000 events per second which has proven to be a useful feature for testing at higher count rates.<p>
+</blockquote>
+
+<img SRC="../../../images/Technical_Publications/Resources_Images/back.gif" width="40" height="35" BORDER="1" ALT="back"> <a HREF="#p491.html">Return to Contents</a><p>
+<!--msthemeseparator--><p align="center"><img src="../../../_themes/blends/blesepa.gif" width="600" height="10"></p><p>
+
+<a NAME="previous_results"></a><h2><!--mstheme--><font color="#0000FF">Testing the accuracy of GPS timing: previous results<!--mstheme--></font></h2>
+<blockquote>
+
+	The potential of GPS timing has been demonstrated in at least two cases. First, the group from Leeds already mentioned above developed a GPS based event time-tagging system for use in a cosmic ray detector array. In order to compare the time synchronization between the clock outputs of two GPS receivers, the group fed a pulse per second from a function generator into two tagging systems, each with its own GPS receiver. By comparing the pulse arrival times recorded by the two systems, they were able to see the variations the time jitter between the clock outputs of the two receivers. Time errors were found to be less than 10 ns for the two scenarios of co-located GPS units and then units separated by 500 m. This level of error is consistent with the requirements of the ALTA project.<p>
+
+
+	An important note is that the Leeds group used a Magnavox receiver which includes a feature to correct for the inherent +/- 50 ns jitter in the receiver's 1 PPS output. This jitter is due to the fact that the receiver generates its 1 PPS signal at the rising edge of its internal 10 MHz oscillator and, thus, the best it can do is to pick a rising edge somewhere within half an oscillator cycle ( +/- 50 ns ) of the true GPS second mark. The small offset each second is determined by the Magnavox and can be recorded and used off-line to correct the receiver's 1 PPS output.<p>
+
+
+	The ALTA project is at the moment testing a different brand of receiver, the Motorola Oncore, and only as this paper is being written has it been discovered that it too offers this correction feature which certainly should be used.<p>
+
+
+	Another test of GPS timing has been done by Tom Clark who has written and made available his own software for controlling a Motorola Oncore receiver and operating it as an accurate clock. Not discussed here in detail, his method offers +/- 50 ns accuracy and has a slightly different philosophy than that of the common view technique. Basically, Clark has the receiver average the signals from several satellites to get a more precise fix on GPS time. The averaging is meant to reduce the time fluctuations due to selective availability. Why, though, bother when the simpler common view technique works at least as well if not better?<p>
+</blockquote>
+
+<img SRC="../../../images/Technical_Publications/Resources_Images/back.gif" width="40" height="35" BORDER="1" ALT="back"> <a HREF="#p491.html">Return to Contents</a><p>
+<!--msthemeseparator--><p align="center"><img src="../../../_themes/blends/blesepa.gif" width="600" height="10"></p><p>
+
+<a NAME="Co-60_setup"></a><h2><!--mstheme--><font color="#0000FF">Testing GPS timing with a mock detector array<!--mstheme--></font></h2><p>
+<blockquote>
+
+	Two of the Leeds time-tag boards were acquired and two Motorola Oncore receivers bought to test the feasibility of GPS based timing in the ALTA array. The receiver antennas were installed on the roof of the tower of the Centre for Subatomic Research to improve visibility. Once this had been done, the receivers required perhaps only a few minutes to lock on to several satellites and the signals were consistently strong. In preparation for running the receivers in timing mode, the averaging feature in Clark's GPS software package was run for a few days to obtain accurate 3-D positions for the antennas.<p>
+
+
+	In order to determine the accuracy of the GPS time-tagging system, the two tag boards, each relying on its own GPS receiver, are fed coincident pulses. Ideally, the difference between pulse arrival times recorded by each set-up should remain a constant. The source of coincidences can be, as in the Leeds experiments, simply a function generator. A closer approximation to what would be encountered in the ALTA array is a source of random coincidences from a radioactive material. A system was built to provide random coincidences at a reasonable rate for testing. In other words an ALTA array simulator was created.<p>
+
+
+	The random coincidence set-up consists of three parts: (i) the source and detectors, (ii) the coincidence hardware and (iii) a real-time monitoring system.<p>
+
+
+	The source used is Cobalt-60. Its beta decay is followed by the effectively instantaneous release of back-to-back gamma rays ( more accurately, two gammas closely correlated in space and time). Two scintillation detectors are placed on either side of the source to detect the coincident photons. The detectors themselves are of a simple construction using a cylindrical piece of scintillating plastic  about two by two inches in size loaded into the mouth of a black PVC pipe containing a PMT and then sealed from light with electrical tape. (See figure 5)<p>
+
+</blockquote>
+<p ALIGN="CENTER">Figure 5: The source and detector configuration.<p>
+
+<p ALIGN="CENTER"><img SRC="../../../images/Technical_Publications/Resources_Images/source.gif" ALIGN="TOP" ALT="source" width="512" height="290"><p>
+<blockquote>
+	The purposes of the electronics hardware are to eliminate low level noise from the PMTs and to filter out all pulses arriving from detectors 1 and 2 except those associated with a real coincident event. A schematic of the electronics is shown in figure 6. The output of the hardware is a pair of coincident logic pulses, one from each detector.<p>
+
+</blockquote>
+<p ALIGN="CENTER">Figure 6: Coincidence electronics used in the Cobalt-60 set-up. The lines carrying the coincident logic pulses to the two GPS time-tagging systems are highlighted in red and green. The CAMAC crate shown at the bottom of the diagram is used to monitor the system output independently.<p>
+
+<p ALIGN="CENTER"><img SRC="../../../images/Technical_Publications/Resources_Images/setup2.gif" ALIGN="TOP" ALT="setup" width="544" height="452"><p>
+<blockquote>
+		A Mac computer running Kmax control software is interfaced with the CAMAC crate shown in Figure 6. The crate contains an ADC and TDC which are used to monitor the system in real time. The ADC, a pulse integrator, looks at the pulses coming directly from the detectors. The shape of the ADC spectrum  can show whether the coincidences are due to more than just random background noise. More important for this set-up, however, is the TDC which measures the time difference between  coincident pulses. These time differences must be consistently small (~10 ns) in order to resolve variations between the tagging systems.<p>
+
+</blockquote>
+<p ALIGN="CENTER">Figures 8, 9:  Screen snapshots of the control program in operation. In the righthand picture are visible the ADC spectra for coincident pulses from the two detectors (top centre and right in blue) and the TDC spectrum showing the time differences between the coincidences (bottom right in green)<p>
+
+<img SRC="../../../images/Technical_Publications/Resources_Images/picture2.gif" ALT="pic2" width="640" height="480">
+
+<img SRC="../../../images/Technical_Publications/Resources_Images/picture3.gif" ALT="pic3" width="640" height="480"><p>
+
+<img SRC="../../../images/Technical_Publications/Resources_Images/back.gif" width="40" height="35" BORDER="1" ALT="back"> &nbsp;<p>
+<!--msthemeseparator--><p align="center"><img src="../../../_themes/blends/blesepa.gif" width="600" height="10"></p><p>
+
+<a NAME="set-up_characteristics"></a><h2><!--mstheme--><font color="#0000FF">Characteristics of random coincidences from the Cobalt-60 setup<!--mstheme--></font></h2><p>
+
+
+	Figure 7 shows the time definition of coincidences obtained from the Co-60 set-up during two representative runs lasting several days. Plotted is the distribution of time differences between coincident pulses from detectors 1 and 2. (Horizontal time scale is 1 ns per 4 divisions). The first point to note is that the distributions from both runs show a spread of about 15 ns, which is more than adequate for resolving variations between the time-tag boards. Second, an addition of about eight  nanoseconds delay in the output line from detector 2 has produced the shift of ~32 channels between the two distributions. The anomalous spike in the right-hand distribution is a result of insufficient delay in the detector 2 line, allowing pulses from the first detector to form, on occasion, both the start and stop signals at the TDC inputs. <p>
+
+<p ALIGN="CENTER">Figure 7: Distribution of time differences between pulses forming coincidence pairs (two runs). Horizontal time axis has scale of 1 ns per 4 divisions<p>
+
+<p ALIGN="CENTER"><img SRC="../../../images/Technical_Publications/Resources_Images/picture5.gif" ALT="pic5" width="640" height="480"><p>
+<blockquote>
+
+	As a final note, the rate of the coincidence source is around four per minute for scintillation counters spaced about ten cm from the Cobalt source.<p>
+</blockquote>
+<img SRC="../../../images/Technical_Publications/Resources_Images/back.gif" width="40" height="35" BORDER="1" ALT="back"> <a HREF="#p491.html">Return to Contents</a><p>
+
+
+<!--msthemeseparator--><p align="center"><img src="../../../_themes/blends/blesepa.gif" width="600" height="10"></p>
+<p>
+
+<a NAME="GPS_tag_testing"></a><h2><!--mstheme--><font color="#0000FF">Testing the GPS time-tag systems<!--mstheme--></font></h2>
+<blockquote>
+
+
+	In order to compare properly the event times recorded by the two tagging systems, the periods (frequencies) of their respective ~100 MHz oscillators had to be found accurately ( to within ~ 1 cycle ). Once this was done, the performance of the boards themselves was tested by using the same GPS receiver to provide 1 PPS time marks to both boards and a function generator to provide event pulses. Little variation between the boards was found. Next, a separate GPS receiver was used for each system with either a function generator or the   Co-60 arrangement  supplying pairs of coincident pulses. A spread of 300-400 ns was observed between the coincident event times recorded by the two tagging systems. Thus, an upper limit on GPS timing fluctuations can be set at 150-200 ns in amplitude. No definite differences at this level were seen between timing methods using one or several satellites. Such qualitative statements are all that can be made at this point. <p>
+
+
+	To increase the accuracy of the tagging system, it has been mentioned above that offsets in the GPS receiver's 1 PPS output (caused by the inherent graininess of the receiver clock) can be accounted for using corrections provided by the receiver itself. One of the Motorola Oncore units unfortunately has this feature missing and must be returned to have its firmware updated.<p>
+</blockquote>
+<img SRC="../../../images/Technical_Publications/Resources_Images/back.gif" width="40" height="35" BORDER="1" ALT="back"> <a HREF="#p491.html">Return to Contents</a><p>
+<!--msthemeseparator--><p align="center"><img src="../../../_themes/blends/blesepa.gif" width="600" height="10"></p>
+<p>
+
+<a NAME="conclusions"></a><h2><!--mstheme--><font color="#0000FF">Conclusions<!--mstheme--></font></h2><p>
+<blockquote>
+
+	Two GPS based time-tagging systems have been assembled as prototypes for the ALTA array. A random coincidence source based on back-to-back gamma emission from a Cobalt-60 source has been constructed for testing the accuracy of GPS timing. The time definition of the random coincidences is about 15 ns and rates are around 4 per minute.<p>
+ 
+
+	Only a rough test of the GPS timing has been made and, as an upper limit, two co-located units can have a synchronization within at least 300 to 400 ns. How much of an improvement can be made will be known in the near future once the firmware of the one faulty GPS receiver is updated and corrections can be made off-line to the 1 PPS receiver clock signals.<p>
+
+</blockquote>
+
+<h2><!--mstheme--><font color="#0000FF">Acknowledgments<!--mstheme--></font></h2>
+<blockquote>
+
+	A great deal of thanks is due to Bill Burris, Jan Schaapman and Dr. John McDonald.
+
+</blockquote>
+
+<h2><!--mstheme--><font color="#0000FF">References<!--mstheme--></font></h2>
+<blockquote>
+
+	Pryke et al., Nuclear Instruments and Methods in Physics Research A  354 (1995) 	560-566.<p>
+
+</blockquote>
+<img SRC="../../../images/Technical_Publications/Resources_Images/back.gif" width="40" height="35" BORDER="1" ALT="back"> <a HREF="#p491.html">Return to Contents</a>
+
+<p>
+<i>This page created by Paul C. Haljan. Questions and comments welcome at</i>  c9617@phys.ualberta.ca
+<p>
+<i>Last updated 2 May 1997</i>
+<!--mstheme--></font><!--msnavigation--></td></tr><!--msnavigation--></table><!--msnavigation--><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+
+<p><script language="JavaScript"><!--
+MSFPhover = 
+  (((navigator.appName == "Netscape") && 
+  (parseInt(navigator.appVersion) >= 3 )) || 
+  ((navigator.appName == "Microsoft Internet Explorer") && 
+  (parseInt(navigator.appVersion) >= 4 ))); 
+function MSFPpreload(img) 
+{
+  var a=new Image(); a.src=img; return a; 
+}
+// --></script><script language="JavaScript"><!--
+if(MSFPhover) { MSFPnav1n=MSFPpreload("../../../_derived/up_cmp_blends110_hbtn.gif"); MSFPnav1h=MSFPpreload("../../../_derived/up_cmp_blends110_hbtn_a.gif"); }
+// --></script><a href="../Technical_Intro.html" language="JavaScript" onmouseover="if(MSFPhover) document['MSFPnav1'].src=MSFPnav1h.src" onmouseout="if(MSFPhover) document['MSFPnav1'].src=MSFPnav1n.src"><img src="../../../_derived/up_cmp_blends110_hbtn.gif" width="140" height="60" border="0" alt="Up" align="middle" name="MSFPnav1"></a> <script language="JavaScript"><!--
+if(MSFPhover) { MSFPnav2n=MSFPpreload("../../_derived/Sitemap.html_cmp_blends110_hbtn.gif"); MSFPnav2h=MSFPpreload("../../_derived/Sitemap.html_cmp_blends110_hbtn_a.gif"); }
+// --></script><a href="../../Sitemap.html" language="JavaScript" onmouseover="if(MSFPhover) document['MSFPnav2'].src=MSFPnav2h.src" onmouseout="if(MSFPhover) document['MSFPnav2'].src=MSFPnav2n.src"><img src="../../_derived/Sitemap.html_cmp_blends110_hbtn.gif" width="140" height="60" border="0" alt="Site Map" align="middle" name="MSFPnav2"></a> <script language="JavaScript"><!--
+if(MSFPhover) { MSFPnav3n=MSFPpreload("../../The_ALTA_Primer/_derived/The_ALTA_Primer.html_cmp_blends110_hbtn.gif"); MSFPnav3h=MSFPpreload("../../The_ALTA_Primer/_derived/The_ALTA_Primer.html_cmp_blends110_hbtn_a.gif"); }
+// --></script><a href="../../The_ALTA_Primer/The_ALTA_Primer.html" language="JavaScript" onmouseover="if(MSFPhover) document['MSFPnav3'].src=MSFPnav3h.src" onmouseout="if(MSFPhover) document['MSFPnav3'].src=MSFPnav3n.src"><img src="../../The_ALTA_Primer/_derived/The_ALTA_Primer.html_cmp_blends110_hbtn.gif" width="140" height="60" border="0" alt="ALTA Primer" align="middle" name="MSFPnav3"></a> <script language="JavaScript"><!--
+if(MSFPhover) { MSFPnav4n=MSFPpreload("../../ALTA_School_Program/_derived/School_Program.html_cmp_blends110_hbtn.gif"); MSFPnav4h=MSFPpreload("../../ALTA_School_Program/_derived/School_Program.html_cmp_blends110_hbtn_a.gif"); }
+// --></script><a href="../../ALTA_School_Program/School_Program.html" language="JavaScript" onmouseover="if(MSFPhover) document['MSFPnav4'].src=MSFPnav4h.src" onmouseout="if(MSFPhover) document['MSFPnav4'].src=MSFPnav4n.src"><img src="../../ALTA_School_Program/_derived/School_Program.html_cmp_blends110_hbtn.gif" width="140" height="60" border="0" alt="School Program" align="middle" name="MSFPnav4"></a> <script language="JavaScript"><!--
+if(MSFPhover) { MSFPnav5n=MSFPpreload("../../Student_CTS_Course/_derived/CTS.html_cmp_blends110_hbtn.gif"); MSFPnav5h=MSFPpreload("../../Student_CTS_Course/_derived/CTS.html_cmp_blends110_hbtn_a.gif"); }
+// --></script><a href="../../Student_CTS_Course/CTS.html" language="JavaScript" onmouseover="if(MSFPhover) document['MSFPnav5'].src=MSFPnav5h.src" onmouseout="if(MSFPhover) document['MSFPnav5'].src=MSFPnav5n.src"><img src="../../Student_CTS_Course/_derived/CTS.html_cmp_blends110_hbtn.gif" width="140" height="60" border="0" alt="CTS Intro" align="middle" name="MSFPnav5"></a>
+</p>
+<!--mstheme--></font><table border="0" width="100%">
+    <tr>
+      <td width="70%" rowspan="2"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><font size="2">Copyright © 2001, Center for
+        Subatomic Research, University of Alberta.<br>
+        For problems, questions or comments regarding this web contact <a href="mailto:alta@phys.ualberta.ca">[Richard
+Soluk]</a>.<br>
+        Last updated: January 19, 2001.</font><!--mstheme--></font></td>
+      <td width="30%" valign="middle" align="center"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><img src="/cgi-bin/Count.cgi?df=alta-top.dat" alt="Hit counter">
+      <!--mstheme--></font></td>
+    </tr>
+    <tr>
+      <td width="30%" valign="top" align="center"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><font size="2">Hits since Feb
+        26, 2001</font><!--mstheme--></font></td>
+    </tr>
+  </table><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font></td></tr><!--msnavigation--></table></body>
+</html>
