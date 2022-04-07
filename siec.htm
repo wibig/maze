@@ -1,0 +1,189 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<script language="javascript"> 
+ 
+function spazi(msgtot,tempo)  { 
+  var sp = " "; 
+  for (var n=0; n <= (10+msgtot.length-tempo); n++) 
+    sp += " "; 
+  return(sp); 
+} 
+
+var msg2 = "Projekt im. Rolanda Maze";
+
+   var pos2 = 0; 
+msg3 = spazi(msg2,0) + msg2 + " "; 
+function ScrollStatus() { 
+	window.status=msg3.substring(pos2,msg3.length) + msg3.substring(0,pos2); 
+	pos2++; 
+	if( pos2 > msg3.length ) pos2=0; 
+	window.setTimeout("ScrollStatus()",100); 
+} 
+ 
+</script> 
+
+<title>cala siec detektorow</title>
+<base target="Right">
+</head>
+
+<body  onLoad="ScrollStatus()" ; background="bline2.gif">
+
+<div align="right">
+
+<table border="0" width="95%" height="49">
+  <tr>
+    <td><div align="center">
+<center><table border="2" width="100%" height="49">
+      <tr>
+        <td width="63%" height="72">
+<p align="center"><font size=+5
+color="#000000"><strong>Koncepcja calosci</strong></font></td>    
+  
+</tr>       <tr>
+        <td width="63%" height="19"><strong><font size="6" color="#FF0000">
+<p align="center"></font><font
+        size=+1 color="#FF0000">
+Jak to ma wygladac</font></strong></td> 
+      </tr>
+    </table>
+    </center></div><table border="2" cellpadding="3" width="95%">
+   
+   <tr>
+        <td valign="top" >
+<font size=+1>W proponowanym projekcie poszczegolne punkty
+ detekcyjne
+rozmieszczone  bylyby w (a najlepiej na) budynkach lodzkich liceow. Ich 
+siec jest na tyle gesta
+ (patrz mapka obok), aby umozliwic obserwacje 
+czastek juz od energii 10<sup>18</sup>eV, co daje znacznie 
+(kilka tysiecy 
+razy) wieksza czestosc pojawiania sie ciekawych 
+przypadkow, niz gdyby poszukiwania zawezic
+ do okolicy 
+10<sup>20</sup>eV, a wiec mozna sie spodziewac pierwszych 
+ciekawych wynikow juz w poczatkowej 
+fazie realizacji projektu 
+przy kilku zaledwie punktach detekcyjnych. 
+W odroznieniu od wielkich eksperymentow 
+dedykowanych 
+wylacznie wielkiej fizyce, kazda stacja (szkola) 
+stanowilaby autonomiczna aparature wielkopekowa. 
+
+
+Mala, na tyle jednak rozbudowana, by wyniki na niej otrzymywane 
+mogly same w sobie
+ sluzyc dla prowadzenia ciekawych 
+prac zwiazanych z fizyka promieniowania kosmicznego 
+i 
+umozliwiac samodzielne i niezalezne rozwijanie metod 
+analizy danych. 
+<br>
+
+Ze wzgledu 
+na dostepne odleglosci detektorow w stacji 
+(rzedu ~10 m) szansa obserwacji pekow skrajnie wysokich 
+energii 
+w konkretnej stacji jest znikoma, jednakze odpowiednio 
+skonstruowany uklad triggera 
+moze zapewnic pelna 
+efektywnosc rejestracji pekow o energiach ~10<sup>15</sup>eV 
+padajacych na 
+powierzchnie detekcyjna (100 m<sup>2</sup>). W 
+zaleznosci od konkretnej realizacji (ustawienia 
+poziomow 
+dyskryminacji) daje to sensowna czestosc zdarzen 
+liczona w min<sup>-1</sup>.
+</p>  
+<p align="center"><img
+              src="szkola.gif" alt="jedna szkola"
+>
+
+
+<!-- width="450"  height="300" -->
+
+<BR><br>
+Schematyczny widok pojedynczej stacji detekcyjnej (szkoly).
+       <p align="center">
+<img
+              src="siecall.jpg" alt="cala siec">
+
+<!-- 
+width="250" height="280" -->
+<br>
+
+Schematyczny widok sieci detekcyjnej projeku Maze.
+</p>       
+</font> 
+</td>
+         
+<td valign="top" >
+<p align="center"><img src="licea33.jpg"
+        alt="licea" width="250" height="235">
+<br>
+<font size=+1>
+
+        Mapa liceow w Lodzi<br>
+</p>
+
+ <br>
+
+Aby umozliwic niezalezne prowadzenie obserwacji 
+w kazdej stacji 
+(w kazdym liceum), powinna sie ona skladac z czterech 
+licznikow scyntylacyjnych o powierzchniach 
+0.5-1 m<sup>2</sup>. Uklad 
+elektroniczny powinien umozliwiac pomiar wzglednych czasow 
+z dokladnoscia ~2 ns
+ (co daloby dokladnosc katowa 
+~5<sup>o</sup>) i pomiar amplitudy (sumy amplitud ze wszystkich 
+detektorow, 
+ gdyz indywidualny pomiar sygnalu z kazdego 
+licznika ma maly sens  przy tak malej ich liczbie w stacji, nalezy 
+jednak przewidziec  mozliwosc zaopatrzenia stacji w dodatkowy 
+zestaw czterech  detektorow, gdyz wtedy pomiar polozenia osi peku  i
+wyznaczania energii w kazdym indywidualnym  przypadku moglby  byc calkiem
+sensowny.)  Uklad przetwornikow i wypracowywania mastera polaczony bylby 
+z komputerem klasy PC, na ktorym dokonywalaby sie wstepna 
+obrobka danych i ich magazynowanie. 
+ <br>
+Dla umozliwienia koordynacji pracy roznych stacji, co jest 
+istota omawianego projektu, dla ich synchronizacji czasowej najlepszy 
+wydaje sie obecnie system GPS. W standartowej wersji daje on absolutny 
+czas na tyle dokladnie (+-300 ns), by synchronizowac zdarzenia 
+w roznych stacjach. Sensownym wydaje sie zwiekszenie 
+dokladnosci do kilku ns (co nie jest szczegolnie skomplikowane, 
+zakladajac, ze kazda stacja ma i tak zegar kilkusetmegahercowy 
+dla pomiaru katow), co umozliwi dodatkowe wyznaczanie 
+kierunku czastki w przypadku jednoczesnego trafienia kilku stacji, a 
+wiec dla pekow bardzo wysokich energii, ktorych 
+badanie jest podstawowym celem naukowym projektu. 
+ <br>
+Lacznosc z innymi stacjami odbywalaby sie za 
+posrednictwem Internetu. Przy tym nie jest wcale istotne stale 
+polaczanie z siecia. Dane zmagazynowane w pamieci moga byc 
+jedynie raz na jakis czas przesylane 
+do centralnego serwera. Serwer ten porzadkowalby przypadki 
+rejestrowane w roznych szkolach, przechowywal je, 
+archiwizowal, oraz udostepnial na zyczenie kazdej grupy 
+komplet danych. W ten sposob kazda z grup uczestniczacych w 
+projekcie moglaby samodzielnie analizowac calosc danych 
+zebranych w ramach projektu prowadzac wlasne, oryginalne badania. 
+ 
+ </font>
+
+      </tr>
+    </table>
+    </td>
+  </tr>
+</table>
+</div>
+<p align="center"><font size="2">Copyright © T.Wibig. All rights reserved.<br>
+
+E-mail:<a href="mailto:wibig@zpk.u.lodz.pl">wibig@zpk.u.lodz.pl</a><br>
+WWW: <a href="http://www.u.lodz.pl/~wibig">www.u.lodz.pl/~wibig</a><br>
+</font></p>
+
+</body>
+</html>
